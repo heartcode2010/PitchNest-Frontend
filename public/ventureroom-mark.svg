@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">VentureRoom</title>
+  <rect width="128" height="128" rx="34" fill="#10251F"/>
+  <path d="M27 35h18l19 52 19-52h18L73 99H55L27 35Z" fill="#D9F36B"/>
+  <circle cx="96" cy="92" r="9" fill="#0F766E"/>
+</svg>
