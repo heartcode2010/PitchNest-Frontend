@@ -60,13 +60,13 @@ export default function Onboarding() {
       console.warn("Failed to save profile to backend:", err);
     }
 
-    localStorage.setItem("pitchnest_onboarding_complete", "true");
+    localStorage.setItem("ventureroom_onboarding_complete", "true");
     localStorage.setItem(
-      "pitchnest_startup_name",
+      "ventureroom_startup_name",
       formData.startupName || "My Startup",
     );
     localStorage.setItem(
-      "pitchnest_funding_stage",
+      "ventureroom_funding_stage",
       formData.fundingStage || "Pre-Seed",
     );
 
@@ -79,9 +79,9 @@ export default function Onboarding() {
   // the request 404'd and the skip never persisted. Navigate regardless so a
   // mail/network hiccup can't trap the user on this screen.
   const handleSkip = async () => {
-    localStorage.setItem("pitchnest_onboarding_complete", "true");
-    localStorage.setItem("pitchnest_startup_name", "My Startup");
-    localStorage.setItem("pitchnest_funding_stage", "Pre-Seed");
+    localStorage.setItem("ventureroom_onboarding_complete", "true");
+    localStorage.setItem("ventureroom_startup_name", "My Startup");
+    localStorage.setItem("ventureroom_funding_stage", "Pre-Seed");
     try {
       const token = getAuthToken();
       await fetch("/api/profile/skip-onboarding", {
