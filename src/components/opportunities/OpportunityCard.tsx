@@ -38,8 +38,8 @@ export function StateBadge({ opportunity }: { opportunity: Pick<Opportunity, "st
 
 /**
  * One curated opportunity. The action always leads to the organizer's own
- * page: PitchNest lists opportunities but never takes applications. The
- * exception is a challenge PitchNest hosts itself, which opens its page here.
+ * page: VentureRoom lists opportunities but never takes applications. The
+ * exception is a challenge VentureRoom hosts itself, which opens its page here.
  */
 export function OpportunityCard({ opportunity }: { opportunity: Opportunity }) {
   if (isHostedChallenge(opportunity)) return <HostedChallengeCard item={opportunity} />;
