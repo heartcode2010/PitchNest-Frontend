@@ -172,7 +172,7 @@ export const UpgradeProvider: React.FC<{ children: React.ReactNode }> = ({ child
                    send anyone to. A mail link is honest; a dead button is not.
                    Address comes from lib/legal.ts, the same one the terms,
                    privacy and support pages publish — the previous
-                   "surpport@pitchnest.app" was a typo'd address on a domain with
+                   "the former support address" was a typo'd address on a domain with
                    no inbound mailbox, so these upgrades went nowhere. */
                 <a
                   href={`mailto:${CONTACT_EMAIL}?subject=Upgrade%20to%20VentureRoom%20Pro`}
