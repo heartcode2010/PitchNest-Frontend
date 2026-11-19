@@ -2068,7 +2068,7 @@ export default function LivePitchRoom() {
         }
 
         if (data.type === "error") {
-          console.error("PitchNest server error:", data.message);
+          console.error("VentureRoom server error:", data.message);
 
           // Paywall rejection. The server closes the socket straight after
           // this, so a chat bubble in a room that is about to disconnect would
@@ -2878,7 +2878,7 @@ export default function LivePitchRoom() {
         <div className="flex min-w-0 items-center gap-2 md:gap-4">
           <LogoMark size="sm" />
           <span className="text-sm md:text-lg font-bold tracking-tight text-slate-900 dark:text-white hidden xs:inline-block">
-            PitchNest
+            VentureRoom
           </span>
           <div className="h-5 w-px bg-slate-200 dark:bg-white/10 mx-1 hidden sm:block" />
           <ThemeToggle />
