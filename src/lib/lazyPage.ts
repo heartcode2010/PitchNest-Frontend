@@ -1,6 +1,6 @@
 import React from "react";
 
-const RELOAD_KEY = "pitchnest:chunk-reload-at";
+const RELOAD_KEY = "ventureroom:chunk-reload-at";
 const RELOAD_COOLDOWN_MS = 60_000;
 
 /**
