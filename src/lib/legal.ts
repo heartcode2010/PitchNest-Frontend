@@ -1,6 +1,6 @@
 /** Public legal / support contact — used in policies and store listings */
-export const CONTACT_EMAIL = 'pitchnestapp@gmail.com';
-export const APP_NAME = 'PitchNest';
+export const CONTACT_EMAIL = 'ventureroom@gmail.com';
+export const APP_NAME = 'VentureRoom';
 export const MIN_AGE = 13;
 export const LEGAL_LAST_UPDATED = 'October 17, 2026';
 /** The Terms changed after the other legal pages. */
