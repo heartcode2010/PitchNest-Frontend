@@ -7,7 +7,8 @@
  * so it can't be used to send someone elsewhere.
  */
 
-const KEY = "pitchnest.returnTo";
+const KEY = "ventureroom.returnTo";
+const LEGACY_RETURN_TO_KEY = "pitchnest.returnTo";
 // Written by earlier versions for challenge pages only; read once, then dropped.
 const LEGACY_KEY = "pitchnest.challengeReturn";
 const MAX_AGE_MS = 24 * 60 * 60 * 1000;
@@ -49,12 +50,13 @@ function read(key: string): string | null {
 }
 
 export function peekReturnTo(): string | null {
-  return read(KEY) ?? read(LEGACY_KEY);
+  return read(KEY) ?? read(LEGACY_RETURN_TO_KEY) ?? read(LEGACY_KEY);
 }
 
 export function clearReturnTo(): void {
   try {
     localStorage.removeItem(KEY);
+    localStorage.removeItem(LEGACY_RETURN_TO_KEY);
     localStorage.removeItem(LEGACY_KEY);
   } catch {
     // Nothing to clear.
