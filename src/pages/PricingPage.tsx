@@ -220,7 +220,7 @@ export default function PricingPage() {
     }
     if (paid && RANK[currentPlan] > RANK[target]) return <span className={quiet}>Included in your plan</span>;
     if (!billingEnabled || selectedSku?.purchasable !== true) {
-      return <a href={`mailto:${CONTACT_EMAIL}?subject=Upgrade%20my%20PitchNest%20plan`} className={action}>Contact us to upgrade</a>;
+      return <a href={`mailto:${CONTACT_EMAIL}?subject=Upgrade%20my%20VentureRoom%20plan`} className={action}>Contact us to upgrade</a>;
     }
     const switching = Boolean(currentSub && currentSub.plan === target);
     const sameManualRenewal = Boolean(
@@ -596,7 +596,7 @@ export default function PricingPage() {
 
       <footer className="mt-10 border-t border-slate-100 dark:border-zinc-800/60">
         <div className="mx-auto flex max-w-295 flex-col items-center justify-between gap-3 px-5 py-6 text-xs text-slate-400 dark:text-zinc-500 sm:flex-row sm:px-7">
-          <span>© {new Date().getFullYear()} PitchNest · Payments by Flutterwave</span>
+          <span>© {new Date().getFullYear()} VentureRoom · Payments by Flutterwave</span>
           <div className="flex gap-4">
             <Link to="/privacy" className="hover:text-sky-600 dark:hover:text-sky-400">Privacy</Link>
             <Link to="/terms" className="hover:text-sky-600 dark:hover:text-sky-400">Terms</Link>
