@@ -223,9 +223,9 @@ export default function LoginPage() {
       // Clear only auth-related keys — preserve tour flags (pn_tour_*) so
       // returning users don't get re-shown the walkthrough on every login.
       clearAuthSession();
-      localStorage.removeItem("pitchnest_onboarding_complete");
-      localStorage.removeItem("pitchnest_startup_name");
-      localStorage.removeItem("pitchnest_funding_stage");
+      localStorage.removeItem("ventureroom_onboarding_complete");
+      localStorage.removeItem("ventureroom_startup_name");
+      localStorage.removeItem("ventureroom_funding_stage");
       await login(data.email, data.password, rememberMe);
       navigate(destination(), { replace: true });
     } catch (error: any) {
@@ -326,9 +326,9 @@ export default function LoginPage() {
                   try {
                     // Clear only auth-related keys — preserve tour flags
                     clearAuthSession();
-                    localStorage.removeItem("pitchnest_onboarding_complete");
-                    localStorage.removeItem("pitchnest_startup_name");
-                    localStorage.removeItem("pitchnest_funding_stage");
+                    localStorage.removeItem("ventureroom_onboarding_complete");
+                    localStorage.removeItem("ventureroom_startup_name");
+                    localStorage.removeItem("ventureroom_funding_stage");
                     const data = await loginWithGoogle(credential, rememberMe);
                     // New Google users go through onboarding first (the server
                     // says so), which then sends them on; everyone else goes
