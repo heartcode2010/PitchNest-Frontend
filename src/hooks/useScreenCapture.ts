@@ -27,12 +27,12 @@ export const useScreenCapture = (onFrame?: (base64: string, slideIndex: number) 
     const handleNext = () => nextSlide();
     const handlePrev = () => prevSlide();
     
-    window.addEventListener('pitchnest:next-slide', handleNext);
-    window.addEventListener('pitchnest:prev-slide', handlePrev);
+    window.addEventListener('ventureroom:next-slide', handleNext);
+    window.addEventListener('ventureroom:prev-slide', handlePrev);
     
     return () => {
-      window.removeEventListener('pitchnest:next-slide', handleNext);
-      window.removeEventListener('pitchnest:prev-slide', handlePrev);
+      window.removeEventListener('ventureroom:next-slide', handleNext);
+      window.removeEventListener('ventureroom:prev-slide', handlePrev);
     };
   }, [nextSlide, prevSlide]);
 
