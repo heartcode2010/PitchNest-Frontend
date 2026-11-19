@@ -29,8 +29,8 @@ Disallow: /reset-password
 Disallow: /workspace/
 Disallow: /staff/
 
-# /pitches is now Pitch Arena: founder-published text pitches, public on purpose.
+# /pitches is the public Pitch Arena for founder-written pitches.
 # Private practice archives live at /archive and stay behind login.
 
 # The backend generates the sitemap; vercel.json forwards /sitemap.xml to it.
-Sitemap: https://www.pitchnest.app/sitemap.xml
+Sitemap: https://ventureroom.vercel.app/sitemap.xml
