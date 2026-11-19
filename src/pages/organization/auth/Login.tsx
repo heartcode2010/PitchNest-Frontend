@@ -29,7 +29,7 @@ const SLIDES = [
     image:
       "/assets/heroImage.jpeg",
     title: "The AI Pitch Deck Evolution",
-    desc: "Join 500+ founders using PitchNest to refine their narratives with real-time AI feedback.",
+    desc: "Join 500+ founders using VentureRoom to refine their narratives with real-time AI feedback.",
   },
   {
     image:
@@ -359,7 +359,7 @@ export default function LoginPage() {
             </form>
             <p className="text-center mt-6 text-xs text-slate-500 dark:text-zinc-500 leading-relaxed px-2">
               By signing in, you agree to
-              PitchNest's{" "}
+              VentureRoom's{" "}
               <Link
                 to="/terms"
                 className="text-sky-600 dark:text-sky-400 font-semibold hover:underline"
