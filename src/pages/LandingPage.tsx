@@ -219,7 +219,7 @@ export default function LandingPage() {
         <section className="relative overflow-hidden">
           <div
             aria-hidden
-            className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(60%_60%_at_80%_10%,rgba(99,102,241,0.14),transparent_60%),radial-gradient(40%_40%_at_5%_0%,rgba(255,210,104,0.18),transparent_60%)] dark:bg-[radial-gradient(60%_60%_at_80%_10%,rgba(99,102,241,0.18),transparent_60%),radial-gradient(40%_40%_at_5%_0%,rgba(255,210,104,0.06),transparent_60%)]"
+            className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(60%_60%_at_80%_10%,rgba(15,118,110,0.14),transparent_60%),radial-gradient(40%_40%_at_5%_0%,rgba(217,243,107,0.18),transparent_60%)] dark:bg-[radial-gradient(60%_60%_at_80%_10%,rgba(15,118,110,0.18),transparent_60%),radial-gradient(40%_40%_at_5%_0%,rgba(217,243,107,0.06),transparent_60%)]"
           />
           <div
             aria-hidden
