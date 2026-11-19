@@ -23,7 +23,7 @@ import { getSessionMode, MODE_LABELS } from "../lib/sessionMode";
 
 const DASHBOARD_TOUR_STEPS = [
   {
-    title: "Welcome to PitchNest 👋",
+    title: "Welcome to VentureRoom 👋",
     body: "This is your home base. Quick 30-second tour of where everything lives — you can skip any time.",
   },
   {
