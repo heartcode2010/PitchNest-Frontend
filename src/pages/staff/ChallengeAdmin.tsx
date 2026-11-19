@@ -380,7 +380,7 @@ function SetupTab({ challenge, onSaved }: { challenge: StaffChallenge; onSaved: 
               <div key={platform} className="grid gap-2 sm:grid-cols-[140px_minmax(0,1fr)_minmax(0,1.4fr)] sm:items-end">
                 <p className="text-sm font-bold text-slate-700 dark:text-zinc-200">{PLATFORM_LABELS[platform]}</p>
                 <Field label="Handle">
-                  <input value={form.socialHandles[platform].handle} onChange={(e) => set("socialHandles", { ...form.socialHandles, [platform]: { ...form.socialHandles[platform], handle: e.target.value } })} maxLength={61} placeholder="@pitchnestapp" className="input-field text-sm" />
+                  <input value={form.socialHandles[platform].handle} onChange={(e) => set("socialHandles", { ...form.socialHandles, [platform]: { ...form.socialHandles[platform], handle: e.target.value } })} maxLength={61} placeholder="@yourbrand" className="input-field text-sm" />
                 </Field>
                 <Field label="Profile link">
                   <input type="url" value={form.socialHandles[platform].url} onChange={(e) => set("socialHandles", { ...form.socialHandles, [platform]: { ...form.socialHandles[platform], url: e.target.value } })} maxLength={500} placeholder="https://" className="input-field text-sm" />
