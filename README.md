@@ -75,7 +75,7 @@ VentureRoom-Frontend/
 
 ```bash
 # Clone the repository
-git clone https://github.com/heartcode2010/VentureRoom-Frontend.git
+git clone https://github.com/heartcode2010/PitchNest-Frontend.git
 cd PitchNest-Frontend
 
 # Install dependencies
@@ -115,7 +115,7 @@ This repository includes a turnkey [vercel.json](vercel.json) that automatically
 
 | Repository | Description |
 | :--- | :--- |
-| **[VentureRoom-Backend](https://github.com/heartcode2010/VentureRoom-Backend)** | Express & WebSocket API server, Azure AI/Speech engine, Supabase integration |
+| **[VentureRoom-Backend](https://github.com/heartcode2010/PitchNest-Backend)** | Express & WebSocket API server, Azure AI/Speech engine, Supabase integration |
 | **[VentureRoom-Mobile](https://github.com/PitchNest-Lab/PitchNest-Mobile)** | Native iOS & Android companion mobile app (React Native / Expo) |
 
 ---
