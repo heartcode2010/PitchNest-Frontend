@@ -175,7 +175,7 @@ export const UpgradeProvider: React.FC<{ children: React.ReactNode }> = ({ child
                    "surpport@pitchnest.app" was a typo'd address on a domain with
                    no inbound mailbox, so these upgrades went nowhere. */
                 <a
-                  href={`mailto:${CONTACT_EMAIL}?subject=Upgrade%20to%20PitchNest%20Pro`}
+                  href={`mailto:${CONTACT_EMAIL}?subject=Upgrade%20to%20VentureRoom%20Pro`}
                   className="flex flex-1 items-center justify-center rounded-xl bg-sky-500 py-3 text-sm font-bold text-white transition-colors hover:bg-sky-600"
                 >
                   Contact us to upgrade
