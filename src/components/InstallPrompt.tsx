@@ -90,7 +90,7 @@ export function InstallPrompt() {
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-sm font-bold text-slate-900 dark:text-zinc-100">
-              Add PitchNest to your phone
+              Add VentureRoom to your phone
             </p>
             <p className="text-xs text-slate-500 dark:text-zinc-400 mt-0.5">
               Install the app for a faster, full-screen experience.
