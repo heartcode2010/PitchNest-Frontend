@@ -5,13 +5,12 @@
 @theme {
   --color-brand-primary: #14532D;
   --color-brand-secondary: #0F766E;
-  --color-bg-main: #FAFBFC;
+  --color-bg-main: #F7F9F2;
   --color-sidebar-bg: #FFFFFF;
   --color-card-bg: #FFFFFF;
 
-  /* Accent: the ecosystem yellow. Fills and markers use accent; text on a
-     yellow fill uses accent-ink; yellow text on light surfaces uses
-     accent-text so it stays readable (dark mode uses accent directly). */
+  /* VentureRoom lime accent. Use accent-ink on fills and accent-text for
+     small text on light surfaces to preserve accessible contrast. */
   --color-accent: #D9F36B;
   --color-accent-strong: #B6D83F;
   --color-accent-soft: #F1F8D8;
