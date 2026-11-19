@@ -15,14 +15,14 @@ if ('serviceWorker' in navigator) {
           ? caches.keys().then((keys) =>
               Promise.all(
                 keys
-                  .filter((key) => key.startsWith('pitchnest-cache-'))
+                  .filter((key) => key.startsWith('pitchnest-cache-') || key.startsWith('ventureroom-cache-'))
                   .map((key) => caches.delete(key)),
               ),
             )
           : Promise.resolve(),
       ])
         .then(() => {
-          const reloadKey = 'pitchnest-sw-dev-cleanup';
+          const reloadKey = 'ventureroom-sw-dev-cleanup';
           if (hadController && sessionStorage.getItem(reloadKey) !== 'done') {
             sessionStorage.setItem(reloadKey, 'done');
             location.reload();
