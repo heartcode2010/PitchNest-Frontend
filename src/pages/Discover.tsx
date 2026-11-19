@@ -71,8 +71,8 @@ export default function Discover() {
   }, []);
 
   usePageMetadata({
-    title: "Discover businesses — PitchNest",
-    description: "Discover founder-approved business profiles across software, services, physical products, and traditional industries on PitchNest.",
+    title: "Discover businesses — VentureRoom",
+    description: "Discover founder-approved business profiles across software, services, physical products, and traditional industries on VentureRoom.",
     path: filterKey ? `/discover?${filterKey}` : "/discover",
   });
 
