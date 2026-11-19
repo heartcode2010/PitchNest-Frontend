@@ -72,7 +72,7 @@ export const SocketProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     const token = getAuthToken();
     if (!token) return;
 
-    const ws = new WebSocket(WS_URL, ['pitchnest-v1', `pitchnest-auth.${token}`]);
+    const ws = new WebSocket(WS_URL, ['ventureroom-v1', `ventureroom-auth.${token}`]);
 
     ws.onopen = () => {
       console.log('✅ Connected to VentureRoom Brain');
