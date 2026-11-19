@@ -30,7 +30,7 @@ export function CookieConsent() {
           <div className="flex-1 min-w-0">
             <p className="text-sm font-bold text-slate-900 dark:text-zinc-100">Cookies for our ads</p>
             <p className="text-xs text-slate-500 dark:text-zinc-400 mt-0.5">
-              With your OK, Google Ads cookies tell us which of our ads bring people to PitchNest. They stay off
+              With your OK, Google Ads cookies tell us which of our ads bring people to VentureRoom. They stay off
               unless you accept.{" "}
               <Link to="/privacy" className="font-medium text-sky-600 dark:text-sky-400 hover:underline">
                 Privacy Policy
