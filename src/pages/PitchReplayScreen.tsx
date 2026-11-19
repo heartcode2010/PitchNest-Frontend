@@ -95,7 +95,7 @@ export default function PitchReplayScreen() {
     try {
       await downloadPdf(
         () => authFetch(`/api/sessions/${session.id}/pdf`),
-        `PitchNest_Report_${(session.business_name || "Pitch").replace(/\s+/g, "_")}.pdf`,
+        `VentureRoom_Report_${(session.business_name || "Pitch").replace(/\s+/g, "_")}.pdf`,
       );
     } catch (err) {
       console.error("PDF download error:", err);
@@ -367,7 +367,7 @@ export default function PitchReplayScreen() {
             )}
           </div>
 
-          {/* Video area. PitchNest never records founder video (req 1), so this
+          {/* Video area. VentureRoom never records founder video (req 1), so this
               placeholder says so plainly instead of implying a video exists. */}
           <div className="flex items-center justify-center gap-2 rounded-2xl border border-dashed border-slate-200 dark:border-zinc-800 py-4 bg-slate-50/50 dark:bg-zinc-900/30">
             <Film size={14} className="text-slate-300 dark:text-zinc-600" />
