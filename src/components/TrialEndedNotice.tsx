@@ -22,7 +22,7 @@ import { useAuth } from "../contexts/AuthContext";
  * is deleted — the archive and any shared links keep working on the free tier.
  * If the matrix moves, this paragraph moves with it.
  */
-const DISMISS_KEY_PREFIX = "pitchnest.trialEndedNoticeDismissedAt";
+const DISMISS_KEY_PREFIX = "ventureroom.trialEndedNoticeDismissedAt";
 
 /**
  * How long after a trial lapses this is still news.
