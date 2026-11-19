@@ -2,7 +2,7 @@ import type { AuthFetch } from "./businesses";
 
 /** Challenges VentureRoom hosts itself, a founder's entry, and the staff tools. */
 
-export const DEFAULT_CHALLENGE_POSTER_URL = "/pitchnest-challenge-poster-founder.jpg";
+export const DEFAULT_CHALLENGE_POSTER_URL = "/ventureroom-challenge-poster-founder.jpg";
 
 /** Prefer the staff-uploaded image, then the bundled poster for the seeded challenge. */
 export function challengePosterUrl(challenge: {
@@ -11,7 +11,7 @@ export function challengePosterUrl(challenge: {
   imageUrl?: string | null;
 }): string | null {
   return challenge.bannerUrl ?? challenge.imageUrl ?? (
-    challenge.slug === "pitchnest-challenge" ? DEFAULT_CHALLENGE_POSTER_URL : null
+    challenge.slug === "ventureroom-challenge" ? DEFAULT_CHALLENGE_POSTER_URL : null
   );
 }
 
