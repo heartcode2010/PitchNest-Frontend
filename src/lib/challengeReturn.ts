@@ -28,7 +28,7 @@ export function takeChallengeReturn(): string | null {
   return path;
 }
 
-const joinedKey = (slug: string) => `pitchnest.challengeJoined.${slug}`;
+const joinedKey = (slug: string) => `ventureroom.challengeJoined.${slug}`;
 
 /** This browser's founder has an entry: the pop-up has nothing left to ask. */
 export function markChallengeJoined(slug: string): void {
