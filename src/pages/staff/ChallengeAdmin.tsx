@@ -930,9 +930,9 @@ function WinnersTab({ challenge, onChanged }: { challenge: StaffChallenge; onCha
       return `${medal} ${placeLabel(w.place)} (${formatPrize(w.prize, challenge.prizeCurrency)}): ${who}${link}`;
     }),
     "",
-    "Congratulations, and thank you to every founder who practised, pitched and showcased on PitchNest.",
+    "Congratulations, and thank you to every founder who practised, pitched and showcased on VentureRoom.",
     `${origin}/opportunities/challenges/${challenge.slug}`,
-    "#PitchNestChallenge",
+    "#VentureRoomChallenge",
   ].join("\n");
 
   return (
@@ -1009,7 +1009,7 @@ function WinnersTab({ challenge, onChanged }: { challenge: StaffChallenge; onCha
             </button>
           </div>
         )}
-        <p className="text-[11px] text-slate-400">Prize money is never transferred from PitchNest. Pay winners through your separately approved process.</p>
+        <p className="text-[11px] text-slate-400">Prize money is never transferred from VentureRoom. Pay winners through your separately approved process.</p>
         {message && <Banner tone={message.tone}>{message.text}</Banner>}
       </section>
     </div>
