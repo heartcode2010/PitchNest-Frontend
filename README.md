@@ -105,7 +105,7 @@ npm run preview
 ## 🌐 Deployment (Vercel)
 
 This repository includes a turnkey [vercel.json](vercel.json) that automatically:
-1. Rewrites all `/api/*` calls to the live production backend: `https://pitchnest-live.onrender.com/api/*`.
+1. Rewrites all `/api/*` calls to the live production backend: `the API endpoint configured in `vercel.json``.
 2. Directs all SPA routes `/(.*)` to `/index.html` to eliminate 404s on browser reloads.
 3. Applies strict security headers (`X-Frame-Options`, `Content-Security-Policy`, `HSTS`).
 
@@ -116,7 +116,7 @@ This repository includes a turnkey [vercel.json](vercel.json) that automatically
 | Repository | Description |
 | :--- | :--- |
 | **[VentureRoom-Backend](https://github.com/heartcode2010/PitchNest-Backend)** | Express & WebSocket API server, Azure AI/Speech engine, Supabase integration |
-| **[VentureRoom-Mobile](https://github.com/PitchNest-Lab/PitchNest-Mobile)** | Native iOS & Android companion mobile app (React Native / Expo) |
+
 
 ---
 
