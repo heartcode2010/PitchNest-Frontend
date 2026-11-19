@@ -13,20 +13,8 @@
     {
       "src": "/ventureroom-mark.svg",
       "sizes": "any",
-      "type": "image/png",
+      "type": "image/svg+xml",
       "purpose": "any"
-    },
-    {
-      "src": "/ventureroom-mark.svg",
-      "sizes": "any",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/ventureroom-mark.svg",
-      "sizes": "any",
-      "type": "image/png",
-      "purpose": "maskable"
     }
   ]
 }
