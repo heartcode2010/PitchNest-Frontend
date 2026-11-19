@@ -200,8 +200,8 @@ export default function PublicBusinessProfile() {
   };
 
   usePageMetadata({
-    title: business ? `${business.name} — PitchNest` : status === "missing" ? "Business not found — PitchNest" : "Business profile — PitchNest",
-    description: business?.tagline || business?.description || "Explore a founder-approved business profile on PitchNest.",
+    title: business ? `${business.name} — VentureRoom` : status === "missing" ? "Business not found — VentureRoom" : "Business profile — VentureRoom",
+    description: business?.tagline || business?.description || "Explore a founder-approved business profile on VentureRoom.",
     path: `/businesses/${encodeURIComponent(slug)}`,
     // Example profiles are illustrations, not businesses to send searchers to.
     robots: status === "ready" && !business?.isExample ? "index, follow" : "noindex, follow",
@@ -349,7 +349,7 @@ export default function PublicBusinessProfile() {
             <p className="mt-1.5 break-words text-sm leading-relaxed text-slate-600 dark:text-zinc-300 sm:text-base">{business.tagline}</p>
             {business.isExample && (
               <p className="mt-2 break-words rounded-lg bg-amber-50 px-3 py-2 text-xs leading-relaxed text-amber-800 dark:bg-amber-500/10 dark:text-amber-200">
-                This is an example profile. It shows what a complete PitchNest business page looks like; the business, its people and its activity are illustrative.
+                This is an example profile. It shows what a complete VentureRoom business page looks like; the business, its people and its activity are illustrative.
               </p>
             )}
             <div className="mt-3 flex flex-wrap items-center gap-2 text-[11px] font-semibold">
@@ -513,7 +513,7 @@ export default function PublicBusinessProfile() {
                   {business.isExample ? (
                     <>
                       <h2 className="text-sm font-bold text-slate-950 dark:text-white">Example profile</h2>
-                      <p className="mt-1.5 text-xs leading-relaxed text-slate-600 dark:text-zinc-400">Written by PitchNest to show what a complete business page looks like. Real businesses are listed before examples on Discover.</p>
+                      <p className="mt-1.5 text-xs leading-relaxed text-slate-600 dark:text-zinc-400">Written by VentureRoom to show what a complete business page looks like. Real businesses are listed before examples on Discover.</p>
                     </>
                   ) : (
                     <>
