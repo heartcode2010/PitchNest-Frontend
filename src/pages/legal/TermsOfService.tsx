@@ -7,21 +7,21 @@ export default function TermsOfService() {
   return (
     <LegalLayout title="Terms of Service" lastUpdated={TERMS_LAST_UPDATED}>
       <p>
-        These Terms of Service (&quot;Terms&quot;) govern your use of PitchNest. By creating an account or using the
+        These Terms of Service (&quot;Terms&quot;) govern your use of VentureRoom. By creating an account or using the
         service, you agree to these Terms and our{' '}
         <Link to="/privacy">Privacy Policy</Link>.
       </p>
 
       <h2>1. Service description</h2>
       <p>
-        PitchNest provides AI-powered pitch practice tools, including simulated investor conversations, deck analysis,
+        VentureRoom provides AI-powered pitch practice tools, including simulated investor conversations, deck analysis,
         session recordings, and performance reports. The service is for educational and practice purposes only.
       </p>
 
       <h2>2. Not financial or investment advice</h2>
       <p>
         AI-generated feedback, scores, and personas are <strong>not</strong> investment advice, legal advice, or a
-        guarantee of funding. PitchNest does not connect you with real investors unless explicitly stated in a future
+        guarantee of funding. VentureRoom does not connect you with real investors unless explicitly stated in a future
         product feature. You are solely responsible for business and fundraising decisions.
       </p>
 
@@ -41,7 +41,7 @@ export default function TermsOfService() {
 
       <h2>5. Your content</h2>
       <p>
-        You retain ownership of pitch decks, recordings, and other content you upload. You grant PitchNest a limited
+        You retain ownership of pitch decks, recordings, and other content you upload. You grant VentureRoom a limited
         license to host, process, and analyze that content solely to provide the service (including sending it to AI
         providers as described in the Privacy Policy).
       </p>
@@ -66,7 +66,7 @@ export default function TermsOfService() {
       <h2>7. Subscriptions and payments</h2>
       <p>
         Paid access periods, prices, currencies, and durations are shown before purchase and processed through
-        Flutterwave&apos;s hosted checkout. Card details are handled by Flutterwave rather than PitchNest. A plan on
+        Flutterwave&apos;s hosted checkout. Card details are handled by Flutterwave rather than VentureRoom. A plan on
         automatic renewal is charged each period until you cancel it in Settings, under Billing; a plan on manual renewal
         is charged only when you pay. Cancelling, refunds and mistaken charges are covered by our{' '}
         <Link to="/refunds">Refunds &amp; Cancellations</Link> policy. Deleting an account ends access to any remaining
@@ -75,7 +75,7 @@ export default function TermsOfService() {
 
       <h2>8. Intellectual property</h2>
       <p>
-        PitchNest&apos;s brand, software, and design are owned by us or our licensors. These Terms do not grant you
+        VentureRoom&apos;s brand, software, and design are owned by us or our licensors. These Terms do not grant you
         ownership of our intellectual property.
       </p>
 
@@ -101,7 +101,7 @@ export default function TermsOfService() {
 
       <h2>12. Governing law</h2>
       <p>
-        These Terms are governed by the laws applicable in the jurisdiction where PitchNest operates, without regard to
+        These Terms are governed by the laws applicable in the jurisdiction where VentureRoom operates, without regard to
         conflict-of-law rules. Disputes will be resolved in competent courts unless otherwise required by consumer
         protection law in your country.
       </p>
