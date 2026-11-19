@@ -42,8 +42,8 @@ export interface Opportunity {
   state: OpportunityState;
   daysLeft: number | null;
   /**
-   * "external": listed by PitchNest, run by the organizer on their own site.
-   * "pitchnest": a challenge PitchNest hosts, entered on PitchNest itself.
+   * "external": listed by VentureRoom, run by the organizer on their own site.
+   * "pitchnest": a challenge VentureRoom hosts, entered on VentureRoom itself.
    */
   source?: "external" | "pitchnest";
   challenge?: {
@@ -57,7 +57,7 @@ export interface Opportunity {
   };
 }
 
-/** A challenge PitchNest hosts, with what its card needs. */
+/** A challenge VentureRoom hosts, with what its card needs. */
 export type HostedOpportunity = Opportunity & { source: "pitchnest"; challenge: NonNullable<Opportunity["challenge"]> };
 
 export function isHostedChallenge(item: Opportunity): item is HostedOpportunity {
