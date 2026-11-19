@@ -207,7 +207,7 @@ export default function App() {
                   </ErrorBoundary>
                 }
               />
-              {/* A challenge PitchNest hosts: its rules and the founder's own
+              {/* A challenge VentureRoom hosts: its rules and the founder's own
                   entry. Signed-out visitors log in or sign up first and come
                   back here (lib/returnTo); link previews come from the backend
                   (vercel.json). */}
