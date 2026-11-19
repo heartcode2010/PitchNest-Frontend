@@ -238,9 +238,9 @@ export default function SignupPage() {
     try {
       // Clear only auth-related keys — preserve tour flags (pn_tour_*)
       clearAuthSession();
-      localStorage.removeItem("pitchnest_onboarding_complete");
-      localStorage.removeItem("pitchnest_startup_name");
-      localStorage.removeItem("pitchnest_funding_stage");
+      localStorage.removeItem("ventureroom_onboarding_complete");
+      localStorage.removeItem("ventureroom_startup_name");
+      localStorage.removeItem("ventureroom_funding_stage");
 
       await signup(data.name, data.email, data.password, data.role);
 
@@ -349,9 +349,9 @@ export default function SignupPage() {
                   try {
                     // Clear only auth-related keys — preserve tour flags
                     clearAuthSession();
-                    localStorage.removeItem("pitchnest_onboarding_complete");
-                    localStorage.removeItem("pitchnest_startup_name");
-                    localStorage.removeItem("pitchnest_funding_stage");
+                    localStorage.removeItem("ventureroom_onboarding_complete");
+                    localStorage.removeItem("ventureroom_startup_name");
+                    localStorage.removeItem("ventureroom_funding_stage");
                     const data = await loginWithGoogle(credential);
                     // New Google users go through onboarding first (the server
                     // says so), which then sends them on; an existing account
