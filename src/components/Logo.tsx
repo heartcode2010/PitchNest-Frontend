@@ -19,8 +19,8 @@ type LogoMarkProps = {
 export function LogoMark({ size = 'md', className }: LogoMarkProps) {
   return (
     <img
-      src="/logo.png"
-      alt="PitchNest"
+      src="/ventureroom-mark.svg"
+      alt="VentureRoom"
       className={cn(SIZES[size], 'shrink-0 rounded-full object-cover', className)}
     />
   );
@@ -47,7 +47,7 @@ export function Logo({ size = 'md', showText = false, className, textClassName }
             textClassName,
           )}
         >
-          PitchNest
+          VentureRoom
         </span>
       )}
     </div>
