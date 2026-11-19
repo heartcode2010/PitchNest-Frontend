@@ -200,7 +200,7 @@ export default function DeckCheck() {
       const deckName = decks.find((d) => d.id === activeAudit.deck_id)?.name || "Deck";
       await downloadPdf(
         () => authFetch(`/api/decks/audits/${activeAudit.id}/pdf`),
-        `PitchNest_DeckCheck_${deckName.replace(/\s+/g, "_")}.pdf`,
+        `VentureRoom_DeckCheck_${deckName.replace(/\s+/g, "_")}.pdf`,
       );
     } catch (err) {
       console.error("PDF download error:", err);
