@@ -27,7 +27,7 @@ export default function PitchArena() {
   const [loadingMore, setLoadingMore] = useState(false);
 
   usePageMetadata({
-    title: "Pitch Arena — PitchNest",
+    title: "Pitch Arena — VentureRoom",
     description: "Read short pitches from founders and give them structured, practical feedback.",
     path: "/pitches",
     robots: enabled ? "index, follow" : "noindex, follow",

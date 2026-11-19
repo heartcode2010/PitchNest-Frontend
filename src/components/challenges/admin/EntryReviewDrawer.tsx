@@ -152,7 +152,7 @@ export function EntryReviewDrawer({
               {detail.placement && <span className="rounded-full bg-amber-100 px-2.5 py-1 text-amber-800">Place {detail.placement}</span>}
             </div>
 
-            <Section title="Pitch (verified by PitchNest)">
+            <Section title="Pitch (verified by VentureRoom)">
               <p>
                 Best score <strong>{detail.bestScore ?? "none yet"}</strong>
                 {detail.bestScoreAt ? ` from ${new Date(detail.bestScoreAt).toLocaleString()}` : ""} · {detail.completedSessions} eligible complete

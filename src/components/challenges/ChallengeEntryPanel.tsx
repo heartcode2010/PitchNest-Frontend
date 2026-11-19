@@ -218,7 +218,7 @@ export function ChallengeEntryPanel({
       </p>
       {entry.businesses.length === 0 ? (
         <div className="mt-3 rounded-2xl border border-dashed border-slate-300 p-4 text-sm dark:border-zinc-700">
-          <p className="text-slate-600 dark:text-zinc-300">You don't have a business on PitchNest yet.</p>
+          <p className="text-slate-600 dark:text-zinc-300">You don't have a business on VentureRoom yet.</p>
           <Link to="/workspace/businesses?new=1" className="btn-secondary mt-3 px-4 py-2 text-xs">Create your business profile</Link>
         </div>
       ) : (
@@ -287,7 +287,7 @@ export function ChallengeEntryPanel({
       {/* Social post */}
       <h3 className="mt-7 text-sm font-extrabold text-slate-950 dark:text-white">Your social media post</h3>
       <p className="mt-1 text-xs text-slate-500 dark:text-zinc-400">
-        Post a screenshot of your best score with your Discover profile link in the caption, tag and follow PitchNest, then paste the
+        Post a screenshot of your best score with your Discover profile link in the caption, tag and follow VentureRoom, then paste the
         post's public link here.
       </p>
       <form
@@ -342,7 +342,7 @@ export function ChallengeEntryPanel({
         <span className="min-w-0 flex-1 text-slate-600 dark:text-zinc-300">
           {entry.social.evidenceUploaded
             ? "Screenshot uploaded. Only reviewers can see it."
-            : "Optional: upload the screenshot you posted (PNG, JPEG or WebP, up to 4 MB). Your score always comes from PitchNest's records."}
+            : "Optional: upload the screenshot you posted (PNG, JPEG or WebP, up to 4 MB). Your score always comes from VentureRoom's records."}
         </span>
         {editable && (
           <>
@@ -393,7 +393,7 @@ export function ChallengeEntryPanel({
           onChange={(e) => void run("consent", () => updateMyEntry(authFetch, slug, { publicNameConsent: e.target.checked }))}
           className="mt-0.5 accent-indigo-600"
         />
-        If I win, PitchNest may show my name next to my business. (Without this, winners are shown by business only.)
+        If I win, VentureRoom may show my name next to my business. (Without this, winners are shown by business only.)
       </label>
 
       {/* Submit */}

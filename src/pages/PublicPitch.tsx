@@ -30,7 +30,7 @@ import {
  * file.
  *
  * NO ACCOUNT REQUIRED. A founder forwarding this to an investor or an
- * accelerator cannot assume the recipient has a PitchNest login, so the route
+ * accelerator cannot assume the recipient has a VentureRoom login, so the route
  * sits outside ProtectedRoute and talks to an unauthenticated endpoint.
  *
  * UNLISTED BY CONSTRUCTION: share ids are v4 UUIDs, sharing is opt-in, and the
@@ -125,7 +125,7 @@ export default function PublicPitch() {
   useEffect(() => {
     if (!pitch?.businessName) return;
     const previous = document.title;
-    document.title = `${pitch.businessName} — PitchNest readiness report`;
+    document.title = `${pitch.businessName} — VentureRoom readiness report`;
     return () => {
       document.title = previous;
     };
@@ -182,7 +182,7 @@ export default function PublicPitch() {
               to="/"
               className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 rounded-xl bg-sky-500 text-white text-sm font-bold hover:bg-sky-600 transition-colors"
             >
-              What is PitchNest? <ArrowRight size={15} />
+              What is VentureRoom? <ArrowRight size={15} />
             </Link>
           </div>
         )}

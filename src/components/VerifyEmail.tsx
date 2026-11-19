@@ -28,13 +28,9 @@ function afterVerification(redirectTo: unknown): string {
   return takeReturnTo() ?? redirectTo;
 }
 
-// MUST match the backend's EMAIL_FROM / config.emailFrom (backend/src/config/env.ts).
-// This previously read "pitchnestapp@gmail.com" — an address that has never sent
-// anything: Resend delivers from the verified pitchnest.app domain, and a
-// gmail.com sender is not something Resend can authenticate at all. Users
-// searched their inbox for the wrong sender and concluded the email never
-// arrived, which is exactly the bug this string caused.
-const SENDER_ADDRESS = "hello@pitchnest.app";
+// The sender identity is configured by the backend's EMAIL_FROM setting.
+// Show the product name rather than hard-coding a provider/domain address.
+const SENDER_ADDRESS = "VentureRoom";
 
 const steps = [
   {

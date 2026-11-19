@@ -1215,7 +1215,7 @@ export default function BusinessWorkspace() {
                   <div className="flex items-center justify-between">
                     <div>
                       <h3 className="text-base font-bold text-slate-950 dark:text-white">Business story</h3>
-                      <p className="mt-1 text-xs text-slate-500 dark:text-zinc-400">The context PitchNest will use across future workflows.</p>
+                      <p className="mt-1 text-xs text-slate-500 dark:text-zinc-400">The context VentureRoom will use across future workflows.</p>
                     </div>
                     <Sparkles size={19} className="text-indigo-500" />
                   </div>

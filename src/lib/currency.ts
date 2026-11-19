@@ -10,7 +10,7 @@ import { useSyncExternalStore } from "react";
  * priced in, and in dollars for any currency it does not offer.
  */
 
-const STORAGE_KEY = "pitchnest.currency";
+const STORAGE_KEY = "ventureroom.currency";
 const ZONE_CURRENCY: Record<string, string> = {
   "Africa/Lagos": "NGN",
   "Africa/Nairobi": "KES",

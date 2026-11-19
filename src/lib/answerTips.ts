@@ -1,4 +1,4 @@
-// PitchNest Answer-Tips Library — Africa-first
+// VentureRoom Answer-Tips Library — Africa-first
 //
 // A static, in-memory coaching library used by the live pitch room's "Tip Card"
 // layer. When a panelist finishes asking a question, the client keyword-matches

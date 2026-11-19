@@ -22,7 +22,7 @@ const SKIPPED_PATHS = new Set([
 ]);
 
 function skipped(pathname: string): boolean {
-  // Shared pitch reports are read by investors, not people joining PitchNest.
+  // Shared pitch reports are read by investors, not people joining VentureRoom.
   return SKIPPED_PATHS.has(pathname) || pathname.startsWith("/share/");
 }
 
@@ -68,9 +68,9 @@ export function GoogleOneTap() {
       try {
         // Same clean-up as the Google buttons on the sign-in and sign-up pages.
         clearAuthSession();
-        localStorage.removeItem("pitchnest_onboarding_complete");
-        localStorage.removeItem("pitchnest_startup_name");
-        localStorage.removeItem("pitchnest_funding_stage");
+        localStorage.removeItem("ventureroom_onboarding_complete");
+        localStorage.removeItem("ventureroom_startup_name");
+        localStorage.removeItem("ventureroom_funding_stage");
         const data = await latest.current.loginWithGoogle(credential);
         // "/" forwards signed-in founders to /home by itself. A new account
         // onboards first, then comes back to this page (lib/returnTo).

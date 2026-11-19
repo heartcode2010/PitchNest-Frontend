@@ -764,7 +764,7 @@ const OrganizationDashboard: React.FC = () => {
               <LogoMark size="sm" />
               <div className="flex items-center gap-2">
                 <span className="font-display font-semibold text-lg tracking-tight text-slate-900 dark:text-zinc-100">
-                  PitchNest
+                  VentureRoom
                 </span>
                 <span className="text-[10px] font-semibold uppercase tracking-wider px-1.5 py-0.5 rounded-md bg-indigo-50 dark:bg-indigo-950/40 text-indigo-600 dark:text-indigo-400 border border-indigo-200/50 dark:border-indigo-800/50 font-sans">
                   Org

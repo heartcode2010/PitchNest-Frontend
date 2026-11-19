@@ -260,7 +260,7 @@ export const BillingProvider: React.FC<{ children: React.ReactNode }> = ({ child
         // The live site only ever leaves for Flutterwave's live checkout. Local
         // and DEV builds use Flutterwave's test mode, whose page is hosted
         // elsewhere, so there any https link from our own API is accepted.
-        const liveSite = /(^|\.)pitchnest\.app$/.test(window.location.hostname);
+        const liveSite = /(^|\.)ventureroom\.vercel\.app$/.test(window.location.hostname);
         if (
           paymentUrl.protocol !== "https:" ||
           (liveSite && paymentUrl.hostname !== "checkout.flutterwave.com") ||

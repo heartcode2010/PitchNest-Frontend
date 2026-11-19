@@ -63,6 +63,7 @@ const BillingReturn = lazyPage(() => import("./pages/BillingReturn"));
 const OrganizationDashboard = lazyPage(() => import("./pages/organization/dashbaord/Main"));
 const OrganizationLogin = lazyPage(() => import("./pages/organization/auth/Login"));
 const BusinessWorkspace = lazyPage(() => import("./pages/BusinessWorkspace"));
+const BusinessHealth = lazyPage(() => import("./pages/BusinessHealth"));
 const Discover = lazyPage(() => import("./pages/Discover"));
 const PublicBusinessProfile = lazyPage(() => import("./pages/PublicBusinessProfile"));
 const FounderProfile = lazyPage(() => import("./pages/FounderProfile"));
@@ -206,7 +207,7 @@ export default function App() {
                   </ErrorBoundary>
                 }
               />
-              {/* A challenge PitchNest hosts: its rules and the founder's own
+              {/* A challenge VentureRoom hosts: its rules and the founder's own
                   entry. Signed-out visitors log in or sign up first and come
                   back here (lib/returnTo); link previews come from the backend
                   (vercel.json). */}
@@ -220,6 +221,14 @@ export default function App() {
               />
               {/* MVP: coming soon — redirect to dashboard until re-enabled */}
               <Route path="/analytics" element={<Navigate to="/dashboard" replace />} />
+              <Route
+                path="/business-health"
+                element={
+                  <ErrorBoundary>
+                    <BusinessHealth />
+                  </ErrorBoundary>
+                }
+              />
               <Route
                 path="/workspace/businesses"
                 element={

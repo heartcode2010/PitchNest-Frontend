@@ -187,7 +187,7 @@ export default function PrePitchSetup() {
       description: 'We are building the next generation of AI tools for enterprise.', 
       industry: 'SaaS & Enterprise',
       investorArchetype: 'Seed Stage - Venture Capital', 
-      fundingStage: localStorage.getItem('pitchnest_funding_stage') || 'Pre-Seed',
+      fundingStage: localStorage.getItem('ventureroom_funding_stage') || 'Pre-Seed',
       aggressiveness: 60, 
       riskAppetite: 75,
       cameraEnabled: false, // Camera is disabled for now (avoiding heavy video storage)
@@ -268,14 +268,14 @@ export default function PrePitchSetup() {
           if (profile) {
             if (profile.startup_name) {
               setValue('businessName', profile.startup_name);
-              localStorage.setItem('pitchnest_startup_name', profile.startup_name);
+              localStorage.setItem('ventureroom_startup_name', profile.startup_name);
             }
             if (profile.industry) {
               setValue('industry', profile.industry);
             }
             if (profile.funding_stage) {
               setValue('fundingStage', profile.funding_stage);
-              localStorage.setItem('pitchnest_funding_stage', profile.funding_stage);
+              localStorage.setItem('ventureroom_funding_stage', profile.funding_stage);
             }
           }
         }
@@ -593,7 +593,7 @@ export default function PrePitchSetup() {
                   <label className="text-xs font-bold text-slate-700 dark:text-zinc-300 flex items-center gap-1.5"><Briefcase size={14} className="text-sky-500"/> Startup Name</label>
                   {errors.businessName && <span className="text-[10px] text-rose-500 font-bold">{errors.businessName.message}</span>}
                 </div>
-                <input {...register('businessName')} type="text" placeholder="e.g. PitchNest AI" className={cn("w-full px-3 py-2 text-sm bg-slate-50 dark:bg-zinc-800 border rounded-xl focus:ring-2 focus:ring-sky-500/20 dark:border-zinc-700 dark:text-zinc-100", errors.businessName && "border-rose-300 focus:ring-rose-500/20")} />
+                <input {...register('businessName')} type="text" placeholder="e.g. VentureRoom AI" className={cn("w-full px-3 py-2 text-sm bg-slate-50 dark:bg-zinc-800 border rounded-xl focus:ring-2 focus:ring-sky-500/20 dark:border-zinc-700 dark:text-zinc-100", errors.businessName && "border-rose-300 focus:ring-rose-500/20")} />
               </div>
               <div className="space-y-1.5 col-span-1">
                 <label className="text-xs font-bold text-slate-700 dark:text-zinc-300 flex items-center gap-1.5"><AlignLeft size={14} className="text-sky-500"/> Industry & Persona</label>

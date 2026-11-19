@@ -59,7 +59,7 @@ export default function Community() {
   const [formError, setFormError] = useState("");
 
   usePageMetadata({
-    title: "Community — PitchNest",
+    title: "Community — VentureRoom",
     description: "Practical founder-to-founder discussions about pitching, fundraising, growth and operations.",
     path: "/community",
     // Discussions are member-written; keep them out of search engines while

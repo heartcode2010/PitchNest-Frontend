@@ -43,7 +43,7 @@ export default function PostPitchReport() {
     try {
       await downloadPdf(
         () => authFetch(`/api/sessions/${session.id}/pdf`),
-        `PitchNest_Report_${(session.business_name || "Pitch").replace(/\s+/g, "_")}.pdf`,
+        `VentureRoom_Report_${(session.business_name || "Pitch").replace(/\s+/g, "_")}.pdf`,
       );
     } catch (err) {
       console.error("PDF download error:", err);
@@ -555,7 +555,7 @@ export default function PostPitchReport() {
           {/* Pro upsell — shown only to someone who would actually gain from it.
               A Pro or trial user already holds these capabilities, so prompting
               them would be selling what they have.
-              The old copy promised "PitchNest Prime" and "direct intros to
+              The old copy promised "VentureRoom Prime" and "direct intros to
               tier-1 VCs", neither of which exists anywhere in the product, and
               told free users to "complete a full 15-minute pitch" when a free
               session is capped at 10. */}

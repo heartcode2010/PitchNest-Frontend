@@ -7,7 +7,7 @@ export default function RefundPolicy() {
   return (
     <LegalLayout title="Refunds & Cancellations" lastUpdated={REFUNDS_LAST_UPDATED}>
       <p>
-        This policy explains how cancelling and refunds work for PitchNest plans. It forms part of our{' '}
+        This policy explains how cancelling and refunds work for VentureRoom plans. It forms part of our{' '}
         <Link to="/terms">Terms of Service</Link>.
       </p>
 
@@ -44,7 +44,7 @@ export default function RefundPolicy() {
       <h2>4. Refunds</h2>
       <ul>
         <li>
-          <strong>Your first payment:</strong> if PitchNest isn&apos;t right for you, ask within 7 days of your first
+          <strong>Your first payment:</strong> if VentureRoom isn&apos;t right for you, ask within 7 days of your first
           payment for a plan and we will refund it in full.
         </li>
         <li>

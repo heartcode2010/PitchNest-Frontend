@@ -18,7 +18,7 @@ import { challengePosterUrl, fetchChallengePromo, formatPrize, type ChallengePro
  * banner, like Google One Tap, so only one thing asks at a time.
  */
 
-const SEEN_KEY = "pitchnest.challengePromoSeen";
+const SEEN_KEY = "ventureroom.challengePromoSeen";
 const QUIET_PATHS = [
   /^\/(login|signup|verify|forgot-password|reset-password|onboarding|organization-login|organization|delete-account)(\/|$)/,
   /^\/(room|live|setup|report|replay|billing|pricing|settings|staff|share)(\/|$)/,

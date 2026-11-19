@@ -63,7 +63,7 @@ export default function ChallengesAdmin() {
       const deadline = new Date(Date.now() + 21 * 86_400_000);
       const created = await createStaffChallenge(authFetch, {
         title: "New challenge",
-        organizer: "PitchNest",
+        organizer: "VentureRoom",
         tagline: "Describe the challenge in one line.",
         description: "Describe the challenge, what founders do and what they can win.",
         prizeCurrency: "NGN",
@@ -83,7 +83,7 @@ export default function ChallengesAdmin() {
       <div className="mx-auto max-w-lg px-4 py-20 text-center">
         <ShieldAlert size={32} className="mx-auto text-slate-300" />
         <h1 className="mt-4 text-xl font-bold text-slate-900 dark:text-zinc-100">This area isn't available</h1>
-        <p className="mt-2 text-sm text-slate-500 dark:text-zinc-400">Challenges are managed by PitchNest staff.</p>
+        <p className="mt-2 text-sm text-slate-500 dark:text-zinc-400">Challenges are managed by VentureRoom staff.</p>
       </div>
     );
   }
@@ -95,7 +95,7 @@ export default function ChallengesAdmin() {
           <p className="text-[10px] font-bold uppercase tracking-widest text-indigo-600 dark:text-indigo-400">Staff</p>
           <h1 className="mt-1 text-2xl font-extrabold text-slate-950 dark:text-white">Challenges</h1>
           <p className="mt-1 text-sm text-slate-500 dark:text-zinc-400">
-            Competitions PitchNest runs itself: rules, entries, judging and winners.
+            Competitions VentureRoom runs itself: rules, entries, judging and winners.
           </p>
         </div>
         <div className="flex flex-wrap gap-2">

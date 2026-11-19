@@ -44,7 +44,7 @@ const SLIDES = [
     image:
       "/assets/heroImage.jpeg",
     title: "The AI Pitch Deck Evolution",
-    desc: "Join 500+ founders using PitchNest to refine their narratives with real-time AI feedback.",
+    desc: "Join 500+ founders using VentureRoom to refine their narratives with real-time AI feedback.",
   },
   {
     image:
@@ -238,9 +238,9 @@ export default function SignupPage() {
     try {
       // Clear only auth-related keys — preserve tour flags (pn_tour_*)
       clearAuthSession();
-      localStorage.removeItem("pitchnest_onboarding_complete");
-      localStorage.removeItem("pitchnest_startup_name");
-      localStorage.removeItem("pitchnest_funding_stage");
+      localStorage.removeItem("ventureroom_onboarding_complete");
+      localStorage.removeItem("ventureroom_startup_name");
+      localStorage.removeItem("ventureroom_funding_stage");
 
       await signup(data.name, data.email, data.password, data.role);
 
@@ -315,7 +315,7 @@ export default function SignupPage() {
             <LogoLink showText size="md" className="mb-10" />
 
             <h2 className="text-4xl font-semibold text-slate-900 dark:text-zinc-100 mb-8 tracking-tight">
-              Join PitchNest
+              Join VentureRoom
             </h2>
 
             <div className="space-y-4">
@@ -349,9 +349,9 @@ export default function SignupPage() {
                   try {
                     // Clear only auth-related keys — preserve tour flags
                     clearAuthSession();
-                    localStorage.removeItem("pitchnest_onboarding_complete");
-                    localStorage.removeItem("pitchnest_startup_name");
-                    localStorage.removeItem("pitchnest_funding_stage");
+                    localStorage.removeItem("ventureroom_onboarding_complete");
+                    localStorage.removeItem("ventureroom_startup_name");
+                    localStorage.removeItem("ventureroom_funding_stage");
                     const data = await loginWithGoogle(credential);
                     // New Google users go through onboarding first (the server
                     // says so), which then sends them on; an existing account
@@ -522,7 +522,7 @@ export default function SignupPage() {
 
               <p className="text-xs text-slate-500 dark:text-zinc-500 leading-relaxed pt-2">
                 By clicking Sign up or Sign up with Google, you agree to
-                PitchNest's{" "}
+                VentureRoom's{" "}
                 <Link
                   to="/terms"
                   className="text-sky-600 dark:text-sky-400 font-semibold hover:underline"
@@ -554,7 +554,7 @@ export default function SignupPage() {
             </form>
 
             <p className="text-center mt-6 text-sm text-slate-500 dark:text-zinc-500">
-              Already on PitchNest?{" "}
+              Already on VentureRoom?{" "}
               <Link
                 to="/login"
                 className="text-sky-600 dark:text-sky-400 font-semibold hover:underline"

@@ -29,7 +29,7 @@ const SLIDES = [
     image:
       "/assets/heroImage.jpeg",
     title: "The AI Pitch Deck Evolution",
-    desc: "Join 500+ founders using PitchNest to refine their narratives with real-time AI feedback.",
+    desc: "Join 500+ founders using VentureRoom to refine their narratives with real-time AI feedback.",
   },
   {
     image:
@@ -196,9 +196,9 @@ export default function LoginPage() {
       // Clear only auth-related keys — preserve tour flags (pn_tour_*) so
       // returning users don't get re-shown the walkthrough on every login.
       clearAuthSession();
-      localStorage.removeItem("pitchnest_onboarding_complete");
-      localStorage.removeItem("pitchnest_startup_name");
-      localStorage.removeItem("pitchnest_funding_stage");
+      localStorage.removeItem("ventureroom_onboarding_complete");
+      localStorage.removeItem("ventureroom_startup_name");
+      localStorage.removeItem("ventureroom_funding_stage");
       await orgLogin(data.email, data.password, rememberMe);
       navigate(from, { replace: true });
     } catch (error: any) {
@@ -359,7 +359,7 @@ export default function LoginPage() {
             </form>
             <p className="text-center mt-6 text-xs text-slate-500 dark:text-zinc-500 leading-relaxed px-2">
               By signing in, you agree to
-              PitchNest's{" "}
+              VentureRoom's{" "}
               <Link
                 to="/terms"
                 className="text-sky-600 dark:text-sky-400 font-semibold hover:underline"

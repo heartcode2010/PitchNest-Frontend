@@ -122,7 +122,7 @@ export default function BillingSection() {
 
           <div className="mt-5 flex flex-wrap gap-3">
             {!info.billingEnabled ? (
-              <a href={`mailto:${CONTACT_EMAIL}?subject=Upgrade%20my%20PitchNest%20plan`} className={primaryButton}>
+              <a href={`mailto:${CONTACT_EMAIL}?subject=Upgrade%20my%20VentureRoom%20plan`} className={primaryButton}>
                 Contact us to upgrade
               </a>
             ) : paid ? (

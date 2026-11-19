@@ -6,7 +6,7 @@
 // NETWORK-FIRST so a fresh deploy shows up immediately instead of being masked
 // by a stale cached shell that points at old, content-hashed JS bundles. Other
 // static assets keep stale-while-revalidate (hashed bundles are safe to reuse).
-const CACHE_NAME = 'pitchnest-cache-v6';
+const CACHE_NAME = 'ventureroom-cache-v1';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',
@@ -35,7 +35,7 @@ self.addEventListener('activate', (event) => {
       return Promise.all(
         cacheNames.map((cache) => {
           if (cache !== CACHE_NAME) {
-            console.log('🧹 Clearing old PWA Cache:', cache);
+            console.log('🧹 Clearing old application cache:', cache);
             return caches.delete(cache);
           }
         })

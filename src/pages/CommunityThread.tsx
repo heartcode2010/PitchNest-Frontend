@@ -46,8 +46,8 @@ export default function CommunityThread() {
   const [reportTarget, setReportTarget] = useState<ReportTarget | null>(null);
 
   usePageMetadata({
-    title: thread ? `${thread.title} — PitchNest Community` : "Discussion — PitchNest Community",
-    description: thread?.body.slice(0, 160) || "A founder discussion on PitchNest.",
+    title: thread ? `${thread.title} — VentureRoom Community` : "Discussion — VentureRoom Community",
+    description: thread?.body.slice(0, 160) || "A founder discussion on VentureRoom.",
     path: `/community/${encodeURIComponent(threadId)}`,
     robots: "noindex, follow",
   });

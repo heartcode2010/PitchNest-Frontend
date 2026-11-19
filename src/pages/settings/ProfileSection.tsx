@@ -92,7 +92,7 @@ export default function ProfileSection() {
 
   return (
     <>
-      <SectionHeader title="Profile" description="How you appear across PitchNest." />
+      <SectionHeader title="Profile" description="How you appear across VentureRoom." />
 
       <div className="mb-6 flex items-center gap-4 rounded-2xl border border-slate-200/80 bg-white p-5 dark:border-zinc-800 dark:bg-zinc-900">
         <div className="relative">

@@ -14,7 +14,7 @@ export default function AppearanceSection() {
 
   return (
     <>
-      <SectionHeader title="Appearance" description="How PitchNest looks on this device." />
+      <SectionHeader title="Appearance" description="How VentureRoom looks on this device." />
       <SettingsGroup>
         <SettingRow label="Theme" description="System follows your device's light or dark setting.">
           <div role="radiogroup" aria-label="Theme" className="inline-flex rounded-full border border-slate-200 bg-slate-50 p-1 dark:border-zinc-700 dark:bg-zinc-800/60">

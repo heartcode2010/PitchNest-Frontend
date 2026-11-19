@@ -91,6 +91,7 @@ const PAGE_INFO: Array<{ test: (pathname: string) => boolean; title: string; are
   { test: (p) => p.startsWith('/opportunities/challenges/'), title: 'Challenge', area: 'Opportunities' },
   { test: (p) => p.startsWith('/opportunities'), title: 'Opportunities', area: 'Founder ecosystem' },
   { test: (p) => p.startsWith('/workspace'), title: 'My workspace', area: 'Your businesses' },
+  { test: (p) => p.startsWith('/business-health'), title: 'Business Health', area: 'Business intelligence' },
   { test: (p) => p.startsWith('/dashboard'), title: 'Practice dashboard', area: 'Private AI practice' },
   { test: (p) => p.startsWith('/setup'), title: 'Pre-Pitch Room', area: 'Private AI practice' },
   { test: (p) => p.startsWith('/archive'), title: 'My Pitches', area: 'Private AI practice' },
@@ -244,10 +245,11 @@ export default function AppLayout() {
     { icon: History, label: 'Pitch Replays', path: '/replay' },
     { icon: Megaphone, label: 'My Pitches', path: '/archive' },
     { icon: Briefcase, label: 'My Workspace', path: '/workspace/businesses' },
+    { icon: Activity, label: 'Business Health', path: '/business-health' },
     // MVP: coming soon — remove the tag to re-enable
     { icon: FileSearch, label: 'Deck Check', path: '/deck-check', tag: 'Soon' },
     { icon: Layers, label: 'Pitch Decks', path: '/decks', tag: 'Soon' },
-    { icon: Activity, label: 'Analytics', path: '/analytics', tag: 'Soon' },
+    // The legacy pitch analytics route is retired; business health now has its own live workspace.
   ];
   const exploreItems: NavItem[] = [
     { icon: Compass, label: 'Discover', path: '/discover' },

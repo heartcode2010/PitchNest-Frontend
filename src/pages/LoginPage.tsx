@@ -32,7 +32,7 @@ const SLIDES = [
     image:
       "/assets/heroImage.jpeg",
     title: "The AI Pitch Deck Evolution",
-    desc: "Join 500+ founders using PitchNest to refine their narratives with real-time AI feedback.",
+    desc: "Join 500+ founders using VentureRoom to refine their narratives with real-time AI feedback.",
   },
   {
     image:
@@ -190,7 +190,7 @@ export default function LoginPage() {
   // The page that sent the founder here (with its query, e.g. a discount code);
   // otherwise one remembered on the way (lib/returnTo: a link opened while
   // signed out); otherwise the dashboard. The sending page is remembered too,
-  // so choosing "Join PitchNest" instead still ends on it after onboarding.
+  // so choosing "Join VentureRoom" instead still ends on it after onboarding.
   const fromPath = locationPath(location.state?.from);
   useEffect(() => {
     if (fromPath) rememberReturnTo(fromPath);
@@ -223,9 +223,9 @@ export default function LoginPage() {
       // Clear only auth-related keys — preserve tour flags (pn_tour_*) so
       // returning users don't get re-shown the walkthrough on every login.
       clearAuthSession();
-      localStorage.removeItem("pitchnest_onboarding_complete");
-      localStorage.removeItem("pitchnest_startup_name");
-      localStorage.removeItem("pitchnest_funding_stage");
+      localStorage.removeItem("ventureroom_onboarding_complete");
+      localStorage.removeItem("ventureroom_startup_name");
+      localStorage.removeItem("ventureroom_funding_stage");
       await login(data.email, data.password, rememberMe);
       navigate(destination(), { replace: true });
     } catch (error: any) {
@@ -307,7 +307,7 @@ export default function LoginPage() {
                 to="/signup"
                 className="text-sky-600 dark:text-sky-400 font-semibold hover:underline"
               >
-                Join PitchNest
+                Join VentureRoom
               </Link>
             </p>
 
@@ -326,9 +326,9 @@ export default function LoginPage() {
                   try {
                     // Clear only auth-related keys — preserve tour flags
                     clearAuthSession();
-                    localStorage.removeItem("pitchnest_onboarding_complete");
-                    localStorage.removeItem("pitchnest_startup_name");
-                    localStorage.removeItem("pitchnest_funding_stage");
+                    localStorage.removeItem("ventureroom_onboarding_complete");
+                    localStorage.removeItem("ventureroom_startup_name");
+                    localStorage.removeItem("ventureroom_funding_stage");
                     const data = await loginWithGoogle(credential, rememberMe);
                     // New Google users go through onboarding first (the server
                     // says so), which then sends them on; everyone else goes
@@ -447,7 +447,7 @@ export default function LoginPage() {
 
             <p className="text-center mt-6 text-xs text-slate-500 dark:text-zinc-500 leading-relaxed px-2">
               By clicking Sign in or Sign in with Google, you agree to
-              PitchNest's{" "}
+              VentureRoom's{" "}
               <Link
                 to="/terms"
                 className="text-sky-600 dark:text-sky-400 font-semibold hover:underline"

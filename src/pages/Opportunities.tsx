@@ -30,7 +30,7 @@ export default function Opportunities() {
   const [search, setSearch] = useState(q);
 
   usePageMetadata({
-    title: "Opportunities for founders — PitchNest",
+    title: "Opportunities for founders — VentureRoom",
     description: "Accelerators, grants, pitch competitions and events for founders, each linked to the organizer's official listing.",
     path: "/opportunities",
   });
@@ -62,7 +62,7 @@ export default function Opportunities() {
     setParam("q", search.trim());
   };
 
-  // Challenges PitchNest hosts lead the page; everything else keeps its grid.
+  // Challenges VentureRoom hosts lead the page; everything else keeps its grid.
   const hosted = items.filter(isHostedChallenge);
   const listed = items.filter((item) => !isHostedChallenge(item));
 
@@ -156,7 +156,7 @@ export default function Opportunities() {
 
           <p className="mt-10 flex items-start justify-center gap-2 text-center text-[11px] leading-relaxed text-slate-400">
             <Info size={13} className="mt-0.5 shrink-0" />
-            PitchNest lists these opportunities to help founders find them. Unless stated, we are not affiliated with
+            VentureRoom lists these opportunities to help founders find them. Unless stated, we are not affiliated with
             the organizers. Always confirm deadlines and eligibility on the official listing.
           </p>
       </section>

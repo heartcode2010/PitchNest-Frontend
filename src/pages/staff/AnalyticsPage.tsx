@@ -91,7 +91,7 @@ export default function AnalyticsPage() {
       <div className="mx-auto max-w-lg px-4 py-20 text-center">
         <ShieldAlert size={32} className="mx-auto text-slate-300" />
         <h1 className="mt-4 text-xl font-bold text-slate-900 dark:text-zinc-100">This area isn't available</h1>
-        <p className="mt-2 text-sm text-slate-500 dark:text-zinc-400">Analytics are restricted to PitchNest staff.</p>
+        <p className="mt-2 text-sm text-slate-500 dark:text-zinc-400">Analytics are restricted to VentureRoom staff.</p>
       </div>
     );
   }

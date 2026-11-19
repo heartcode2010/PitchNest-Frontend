@@ -81,7 +81,7 @@ export function PlatformOverview({ isLoggedIn }: { isLoggedIn: boolean }) {
           <p className="eyebrow justify-center mb-3">One account</p>
           <h2 className="section-heading mb-4">Prepare in private. Showcase in public. Grow with founders.</h2>
           <p className="section-subheading mx-auto">
-            PitchNest is where you get ready for the room and where people find what you're building.
+            VentureRoom is where you get ready for the room and where people find what you're building.
             Start with practice; publish only when you choose to.
           </p>
         </SectionReveal>

@@ -1,8 +1,8 @@
 import type { AuthFetch } from "./businesses";
 
-/** Challenges PitchNest hosts itself, a founder's entry, and the staff tools. */
+/** Challenges VentureRoom hosts itself, a founder's entry, and the staff tools. */
 
-export const DEFAULT_CHALLENGE_POSTER_URL = "/pitchnest-challenge-poster-founder.jpg";
+export const DEFAULT_CHALLENGE_POSTER_URL = "/ventureroom-challenge-poster-founder.jpg";
 
 /** Prefer the staff-uploaded image, then the bundled poster for the seeded challenge. */
 export function challengePosterUrl(challenge: {
@@ -11,7 +11,7 @@ export function challengePosterUrl(challenge: {
   imageUrl?: string | null;
 }): string | null {
   return challenge.bannerUrl ?? challenge.imageUrl ?? (
-    challenge.slug === "pitchnest-challenge" ? DEFAULT_CHALLENGE_POSTER_URL : null
+    challenge.slug === "ventureroom-challenge" ? DEFAULT_CHALLENGE_POSTER_URL : null
   );
 }
 
@@ -35,11 +35,11 @@ export const PROFILE_CRITERIA = [
 export type ProfileCriterion = (typeof PROFILE_CRITERIA)[number][0];
 export const SOCIAL_CHECKS = [
   ["postPublic", "The post is public and opens"],
-  ["scoreScreenshot", "It shows a PitchNest score screenshot"],
+  ["scoreScreenshot", "It shows a VentureRoom score screenshot"],
   ["profileLink", "The caption links the Discover profile"],
-  ["tagged", "PitchNest is tagged"],
+  ["tagged", "VentureRoom is tagged"],
   ["collaboration", "Collaboration requested (where the platform allows)"],
-  ["follows", "The founder follows PitchNest"],
+  ["follows", "The founder follows VentureRoom"],
 ] as const;
 export type SocialCheck = (typeof SOCIAL_CHECKS)[number][0];
 

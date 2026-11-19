@@ -62,7 +62,7 @@ function TextBlock({ text }: { text: string }) {
 }
 
 /**
- * A challenge PitchNest hosts: the rules and prizes for everyone, and, for a
+ * A challenge VentureRoom hosts: the rules and prizes for everyone, and, for a
  * signed-in founder, their own entry. Visitors are taken through sign-up or
  * log-in and brought back here.
  */
@@ -83,8 +83,8 @@ export default function ChallengePage() {
   const posterUrl = challenge ? challengePosterUrl(challenge) : null;
 
   usePageMetadata({
-    title: challenge ? `${challenge.title} — PitchNest` : "Challenge — PitchNest",
-    description: challenge?.tagline || "A pitch competition hosted by PitchNest.",
+    title: challenge ? `${challenge.title} — VentureRoom` : "Challenge — VentureRoom",
+    description: challenge?.tagline || "A pitch competition hosted by VentureRoom.",
     path: `/opportunities/challenges/${slug}`,
     robots: challenge?.preview ? "noindex, nofollow" : "index, follow",
     ...(posterUrl ? { image: posterUrl } : {}),
@@ -246,7 +246,7 @@ export default function ChallengePage() {
       title: `Subscribe to ${requiredPlanLabel}`,
       body: discount ? (
         <>
-          Subscribe to PitchNest {requiredPlanLabel} with code{" "}
+          Subscribe to VentureRoom {requiredPlanLabel} with code{" "}
           <button
             type="button"
             onClick={() => void copyCode(discount.code)}
@@ -259,7 +259,7 @@ export default function ChallengePage() {
           {!discount.active && " The code isn't active yet."}
         </>
       ) : (
-        `Subscribe to PitchNest ${requiredPlanLabel}. The Free plan doesn't count.`
+        `Subscribe to VentureRoom ${requiredPlanLabel}. The Free plan doesn't count.`
       ),
       action: founder && joined?.subscription.state === "missing" && joined.editable ? (
         <Link to={pricingLink} onClick={() => rememberChallengeReturn(location.pathname)} className="btn-accent px-4 py-2 text-xs">
@@ -276,13 +276,13 @@ export default function ChallengePage() {
     {
       icon: Layers,
       title: "Showcase your business",
-      body: "Publish your business profile on PitchNest Discover with as much as you can: the problem, solution, target customers, market, business model, traction and anything else that helps.",
+      body: "Publish your business profile on VentureRoom Discover with as much as you can: the problem, solution, target customers, market, business model, traction and anything else that helps.",
       action: founder ? <Link to="/workspace/businesses" className="btn-secondary px-4 py-2 text-xs">Open your workspace</Link> : null,
     },
     {
       icon: ImageIcon,
       title: "Share your best score",
-      body: "Take a screenshot of your highest readiness score from a challenge session, on its PitchNest report.",
+      body: "Take a screenshot of your highest readiness score from a challenge session, on its VentureRoom report.",
       action: null,
     },
     {
@@ -290,8 +290,8 @@ export default function ChallengePage() {
       title: "Post it on social media",
       body: (
         <>
-          Post the screenshot on Instagram, Facebook or X with your Discover profile link in the caption. Tag and follow PitchNest
-          {firstHandle ? ` (${firstHandle})` : ""}, and invite PitchNest as a collaborator where the platform allows it.
+          Post the screenshot on Instagram, Facebook or X with your Discover profile link in the caption. Tag and follow VentureRoom
+          {firstHandle ? ` (${firstHandle})` : ""}, and invite VentureRoom as a collaborator where the platform allows it.
         </>
       ),
       action: null,
@@ -363,7 +363,7 @@ export default function ChallengePage() {
               <div className="rounded-2xl bg-slate-50 p-3 dark:bg-zinc-800/60">
                 <dt className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Winners announced</dt>
                 <dd className="mt-0.5 font-bold text-slate-900 dark:text-zinc-100">{formatDay(challenge.winnersAnnouncedOn) || "To be announced"}</dd>
-                <dd className="mt-0.5 text-xs text-slate-500 dark:text-zinc-400">On PitchNest's official social media</dd>
+                <dd className="mt-0.5 text-xs text-slate-500 dark:text-zinc-400">On VentureRoom's official social media</dd>
               </div>
             </dl>
             {challenge.participantCount > 0 && (
@@ -418,7 +418,7 @@ export default function ChallengePage() {
         </ol>
         {challenge.socialHandles.length > 0 && (
           <div className="mt-6 rounded-2xl bg-slate-50 p-4 dark:bg-zinc-800/60">
-            <p className="text-xs font-extrabold uppercase tracking-wider text-slate-500 dark:text-zinc-400">Official PitchNest accounts</p>
+            <p className="text-xs font-extrabold uppercase tracking-wider text-slate-500 dark:text-zinc-400">Official VentureRoom accounts</p>
             <ul className="mt-2 space-y-2">
               {challenge.socialHandles.map((handle) => (
                 <li key={handle.platform} className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
@@ -427,9 +427,9 @@ export default function ChallengePage() {
                   </a>
                   <span className="text-xs text-slate-500 dark:text-zinc-400">
                     {handle.collaboration === "supported"
-                      ? "Tag, follow, and invite PitchNest as a collaborator."
+                      ? "Tag, follow, and invite VentureRoom as a collaborator."
                       : handle.collaboration === "limited"
-                        ? "Tag and follow. Invite PitchNest as a collaborator if your post offers it."
+                        ? "Tag and follow. Invite VentureRoom as a collaborator if your post offers it."
                         : "Tag and follow. X has no collaborator posts, so we check your post by hand."}
                   </span>
                 </li>
@@ -480,7 +480,7 @@ export default function ChallengePage() {
           </p>
           {challenge.judgingCriteria && <div className="mt-3"><TextBlock text={challenge.judgingCriteria} /></div>}
           <p className="mt-3 text-xs text-slate-500 dark:text-zinc-400">
-            Your pitch score is read from PitchNest's own reports. A screenshot is supporting evidence only and never changes your score.
+            Your pitch score is read from VentureRoom's own reports. A screenshot is supporting evidence only and never changes your score.
           </p>
         </div>
       </section>
@@ -519,7 +519,7 @@ export default function ChallengePage() {
           </ol>
         ) : (
           <p className="mt-3 text-sm text-slate-600 dark:text-zinc-300">
-            Winners will be announced on PitchNest's official social media handles
+            Winners will be announced on VentureRoom's official social media handles
             {challenge.winnersAnnouncedOn ? ` on ${formatDay(challenge.winnersAnnouncedOn)}` : ""}.
           </p>
         )}

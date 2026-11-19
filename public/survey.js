@@ -20,7 +20,7 @@ if (!email) {
     <div class="no-email">
       <h1>Survey Link Invalid</h1>
       <p>This survey requires a valid email parameter in the URL.</p>
-      <p><a href="/">← Back to PitchNest</a></p>
+      <p><a href="/">← Back to VentureRoom</a></p>
     </div>
   `;
 } else {

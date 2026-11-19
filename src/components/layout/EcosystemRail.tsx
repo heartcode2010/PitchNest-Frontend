@@ -102,7 +102,7 @@ export function EcosystemRail({ hide = [] }: { hide?: RailCard[] }) {
   const openOpportunities = (opportunities ?? []).filter((item) => item.state !== "closed").slice(0, 3);
 
   return (
-    <aside className="hidden xl:block" aria-label="More from PitchNest">
+    <aside className="hidden xl:block" aria-label="More from VentureRoom">
       <div className="sticky top-24 space-y-4">
         {showPitches && (
           <section className="relative overflow-hidden rounded-2xl gradient-brand p-5 text-white">
@@ -170,7 +170,7 @@ export function EcosystemRail({ hide = [] }: { hide?: RailCard[] }) {
         )}
 
         {!hide.includes("connection") && (
-          <RailCardShell icon={Sparkles} title="The PitchNest connection">
+          <RailCardShell icon={Sparkles} title="The VentureRoom connection">
             <ol className="space-y-2 text-[11px] leading-relaxed text-slate-500 dark:text-zinc-400">
               {[
                 "Showcase your business in public.",
