@@ -18,7 +18,7 @@ export const SocketProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   const [socket, setSocket] = useState<WebSocket | null>(null);
 
   useEffect(() => {
-    console.log("🔌 Connecting to PitchNest Brain...");
+    console.log("🔌 Connecting to VentureRoom Brain...");
     
     // ✅ DYNAMIC URL FIX: Works seamlessly for Localhost, LAN IPs, and Cloud Deployments
     const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
@@ -75,7 +75,7 @@ export const SocketProvider: React.FC<{ children: React.ReactNode }> = ({ childr
     const ws = new WebSocket(WS_URL, ['pitchnest-v1', `pitchnest-auth.${token}`]);
 
     ws.onopen = () => {
-      console.log('✅ Connected to PitchNest Brain');
+      console.log('✅ Connected to VentureRoom Brain');
       setIsConnected(true);
       setSocket(ws);
     };
