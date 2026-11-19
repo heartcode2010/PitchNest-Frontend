@@ -32,7 +32,7 @@ const SLIDES = [
     image:
       "/assets/heroImage.jpeg",
     title: "The AI Pitch Deck Evolution",
-    desc: "Join 500+ founders using PitchNest to refine their narratives with real-time AI feedback.",
+    desc: "Join 500+ founders using VentureRoom to refine their narratives with real-time AI feedback.",
   },
   {
     image:
@@ -190,7 +190,7 @@ export default function LoginPage() {
   // The page that sent the founder here (with its query, e.g. a discount code);
   // otherwise one remembered on the way (lib/returnTo: a link opened while
   // signed out); otherwise the dashboard. The sending page is remembered too,
-  // so choosing "Join PitchNest" instead still ends on it after onboarding.
+  // so choosing "Join VentureRoom" instead still ends on it after onboarding.
   const fromPath = locationPath(location.state?.from);
   useEffect(() => {
     if (fromPath) rememberReturnTo(fromPath);
@@ -307,7 +307,7 @@ export default function LoginPage() {
                 to="/signup"
                 className="text-sky-600 dark:text-sky-400 font-semibold hover:underline"
               >
-                Join PitchNest
+                Join VentureRoom
               </Link>
             </p>
 
@@ -447,7 +447,7 @@ export default function LoginPage() {
 
             <p className="text-center mt-6 text-xs text-slate-500 dark:text-zinc-500 leading-relaxed px-2">
               By clicking Sign in or Sign in with Google, you agree to
-              PitchNest's{" "}
+              VentureRoom's{" "}
               <Link
                 to="/terms"
                 className="text-sky-600 dark:text-sky-400 font-semibold hover:underline"
