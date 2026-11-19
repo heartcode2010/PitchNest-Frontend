@@ -34,8 +34,8 @@ export default function Home() {
   const [opportunity, setOpportunity] = useState<Opportunity | null>(null);
 
   usePageMetadata({
-    title: "Home — PitchNest",
-    description: "Practise your pitch with an AI investor panel, then discover founders, join conversations and find opportunities on PitchNest.",
+    title: "Home — VentureRoom",
+    description: "Practise your pitch with an AI investor panel, then discover founders, join conversations and find opportunities on VentureRoom.",
     path: "/home",
     // The marketing landing page at "/" is the page to index.
     robots: "noindex, follow",
