@@ -8,7 +8,7 @@ export default function Support() {
   return (
     <LegalLayout title="Support" lastUpdated={LEGAL_LAST_UPDATED}>
       <p>
-        Need help with PitchNest? We&apos;re here for account issues, pitch sessions, privacy questions,
+        Need help with VentureRoom? We&apos;re here for account issues, pitch sessions, privacy questions,
         and account deletion.
       </p>
 
@@ -34,7 +34,7 @@ export default function Support() {
       </ul>
 
       <h2>Age requirement</h2>
-      <p>PitchNest is intended for users age {MIN_AGE} and older. The app contains no violence or profanity.</p>
+      <p>VentureRoom is intended for users age {MIN_AGE} and older. The app contains no violence or profanity.</p>
     </LegalLayout>
   );
 }
