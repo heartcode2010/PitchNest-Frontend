@@ -1,3 +1,5 @@
+import type { AuthFetch } from "./businesses";
+
 export interface BusinessHealthSnapshot {
   id: string;
   periodStart: string;
