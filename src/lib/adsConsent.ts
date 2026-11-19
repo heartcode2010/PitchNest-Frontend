@@ -54,7 +54,7 @@ function loadGoogleAds(): void {
   }
 }
 
-/** gtag sets its cookies on the widest domain it can, e.g. .pitchnest.app. */
+/** gtag sets its cookies on the widest domain it can, e.g. .vercel.app. */
 function clearGoogleAdsCookies(): void {
   try {
     const names = document.cookie
