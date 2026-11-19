@@ -187,7 +187,7 @@ export function formatPrice(
 }
 
 /**
- * The plan catalogue, matching the PitchNest pricing deck. Per-tier prices come
+ * The plan catalogue, matching the VentureRoom pricing deck. Per-tier prices come
  * from the SERVER catalog (usePublicPrice → /api/billing/price) so the displayed
  * number is exactly what checkout charges; fixed fallbacks are used only until
  * the price loads (or if billing is unconfigured).
