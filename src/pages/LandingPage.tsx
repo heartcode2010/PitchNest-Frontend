@@ -71,7 +71,7 @@ const whyItems = [
 ];
 
 const faqs = [
-  { q: "What is PitchNest?", a: "A live AI investor panel you pitch to out loud. It reads your deck, questions you the way real partners do and scores your readiness, so you can fix the gaps before the real meeting." },
+  { q: "What is VentureRoom?", a: "VentureRoom is a private practice space for founders preparing for high-stakes conversations. Its AI investor panel reads your pitch deck, challenges your assumptions, asks adaptive follow-up questions and turns each session into a practical readiness report." },
   { q: "How realistic is the panel?", a: "It asks the kind of pointed, adaptive questions real partners do, and debates your answers out loud. It's practice, not a prediction of any investor's decision." },
   { q: "How is this different from asking a chatbot to play an investor?", a: "Three investors with different angles question you together, building on or pushing back on each other's points when it matters. Their questions come from your own deck. Every session is scored on the same scorecard, so you can see whether you're improving, and the panel remembers what was weak last time." },
   { q: "Can I upload my pitch deck?", a: "Yes. The panel reads it and asks questions grounded in your slides and numbers." },
@@ -237,21 +237,21 @@ export default function LandingPage() {
                 <motion.div variants={heroBlock} className="mb-6">
                   <span className="inline-flex flex-wrap items-center gap-x-2 gap-y-1 rounded-full border border-slate-200 bg-white/80 px-3.5 py-1.5 text-[12px] font-semibold text-slate-600 shadow-sm backdrop-blur dark:border-zinc-800 dark:bg-zinc-900/80 dark:text-zinc-300">
                     <span className="h-1.5 w-1.5 rounded-full bg-accent-strong animate-pulse" />
-                    Live AI investor panel <span className="text-slate-300 dark:text-zinc-600">·</span> Reads your deck
+                    A sharper room for your next big opportunity <span className="text-slate-300 dark:text-zinc-600">·</span> Powered by AI
                   </span>
                 </motion.div>
 
                 <HeroWords />
 
                 <motion.p variants={heroBlock} className="mt-6 mb-8 text-base sm:text-lg leading-relaxed text-slate-600 dark:text-zinc-400 max-w-xl">
-                  Pitch out loud to three AI investors. They read your deck, interrupt with
-                  follow-ups and debate your answers, then score your readiness so you know
-                  exactly what to fix before the real meeting.
+                  Walk into your next investor conversation better prepared. VentureRoom lets you rehearse
+                  with a live AI panel that studies your deck, challenges your thinking and gives
+                  you clear, measurable feedback on what to strengthen before the real room.
                 </motion.p>
 
                 <motion.div variants={heroBlock} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                   <Link to={startHref} className="btn-primary justify-center px-7 py-3.5 text-base">
-                    Start a free session <ArrowRight size={18} />
+                    Rehearse your pitch free <ArrowRight size={18} />
                   </Link>
                   <Link to="/discover" className="btn-secondary justify-center px-7 py-3.5 text-base">
                     <Compass size={18} /> Explore Discover
@@ -551,7 +551,7 @@ export default function LandingPage() {
                 </p>
                 <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
                   <Link to={startHref} className="btn-accent px-7 py-3.5 text-base">
-                    <Mic size={18} /> Start a free session
+                    <Mic size={18} /> Rehearse your pitch free
                   </Link>
                 </div>
               </div>
@@ -565,10 +565,10 @@ export default function LandingPage() {
             <div className="col-span-2 md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
                 <LogoMark size="xs" />
-                <span className="text-base font-bold">PitchNest</span>
+                <span className="text-base font-bold">VentureRoom</span>
               </div>
               <p className="text-sm text-slate-500 dark:text-zinc-400 leading-relaxed mb-5 max-w-xs">
-                Rehearse your pitch, showcase your business, and find your next opportunity.
+                Prepare with purpose. Build confidence. Make your next opportunity count.
               </p>
               <div className="flex items-center gap-3">
                 <a href="https://facebook.com/pitchnestapp" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-white dark:bg-zinc-800 border border-slate-200 dark:border-zinc-700 flex items-center justify-center text-slate-500 dark:text-zinc-400 hover:text-blue-600 hover:border-blue-300 dark:hover:border-blue-500 transition-colors" aria-label="Facebook">
@@ -618,8 +618,8 @@ export default function LandingPage() {
             </div>
           </div>
           <div className="max-w-295 mx-auto px-5 sm:px-7 mt-10 sm:mt-14 pt-6 border-t border-slate-200 dark:border-zinc-800 flex flex-col sm:flex-row justify-between items-center gap-2 text-xs text-slate-400 dark:text-zinc-500">
-            <p>&copy; {new Date().getFullYear()} PitchNest AI. All rights reserved.</p>
-            <p>Applying for Y Combinator Winter 2026</p>
+            <p>&copy; {new Date().getFullYear()} VentureRoom. All rights reserved.</p>
+            <p>Built by <span className="font-semibold text-slate-600 dark:text-zinc-300">Heartcode Technologies</span>.</p>
           </div>
         </footer>
       </div>
