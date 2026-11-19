@@ -29,10 +29,10 @@ export default function FounderProfile() {
   const [copied, setCopied] = useState(false);
 
   usePageMetadata({
-    title: founder ? `${founder.name} — PitchNest` : "Founder — PitchNest",
+    title: founder ? `${founder.name} — VentureRoom` : "Founder — VentureRoom",
     description: founder
-      ? `${founder.name} is building ${founder.businesses.map((b) => b.name).join(", ")} on PitchNest.`
-      : "A founder on PitchNest.",
+      ? `${founder.name} is building ${founder.businesses.map((b) => b.name).join(", ")} on VentureRoom.`
+      : "A founder on VentureRoom.",
     path: `/founders/${handle}`,
     // People's pages stay out of search engines unless we decide otherwise.
     robots: "noindex, follow",
@@ -169,7 +169,7 @@ export default function FounderProfile() {
           </div>
 
           <h1 className="mt-4 text-2xl font-extrabold tracking-tight text-slate-950 dark:text-white sm:text-3xl">{founder.name}</h1>
-          <p className="mt-1 text-sm text-slate-500 dark:text-zinc-400">Founder on PitchNest · {building}</p>
+          <p className="mt-1 text-sm text-slate-500 dark:text-zinc-400">Founder on VentureRoom · {building}</p>
           {founder.viewer.isSelf && founder.viewer.followerCount !== null && (
             <p className="mt-3 inline-flex items-center gap-1.5 rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300">
               {founder.viewer.followerCount} {founder.viewer.followerCount === 1 ? "follower" : "followers"} · only you can see this
