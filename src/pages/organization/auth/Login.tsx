@@ -196,9 +196,9 @@ export default function LoginPage() {
       // Clear only auth-related keys — preserve tour flags (pn_tour_*) so
       // returning users don't get re-shown the walkthrough on every login.
       clearAuthSession();
-      localStorage.removeItem("pitchnest_onboarding_complete");
-      localStorage.removeItem("pitchnest_startup_name");
-      localStorage.removeItem("pitchnest_funding_stage");
+      localStorage.removeItem("ventureroom_onboarding_complete");
+      localStorage.removeItem("ventureroom_startup_name");
+      localStorage.removeItem("ventureroom_funding_stage");
       await orgLogin(data.email, data.password, rememberMe);
       navigate(from, { replace: true });
     } catch (error: any) {
