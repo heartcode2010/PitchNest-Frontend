@@ -187,7 +187,7 @@ export default function PrePitchSetup() {
       description: 'We are building the next generation of AI tools for enterprise.', 
       industry: 'SaaS & Enterprise',
       investorArchetype: 'Seed Stage - Venture Capital', 
-      fundingStage: localStorage.getItem('pitchnest_funding_stage') || 'Pre-Seed',
+      fundingStage: localStorage.getItem('ventureroom_funding_stage') || 'Pre-Seed',
       aggressiveness: 60, 
       riskAppetite: 75,
       cameraEnabled: false, // Camera is disabled for now (avoiding heavy video storage)
@@ -268,14 +268,14 @@ export default function PrePitchSetup() {
           if (profile) {
             if (profile.startup_name) {
               setValue('businessName', profile.startup_name);
-              localStorage.setItem('pitchnest_startup_name', profile.startup_name);
+              localStorage.setItem('ventureroom_startup_name', profile.startup_name);
             }
             if (profile.industry) {
               setValue('industry', profile.industry);
             }
             if (profile.funding_stage) {
               setValue('fundingStage', profile.funding_stage);
-              localStorage.setItem('pitchnest_funding_stage', profile.funding_stage);
+              localStorage.setItem('ventureroom_funding_stage', profile.funding_stage);
             }
           }
         }
