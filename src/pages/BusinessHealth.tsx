@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { Activity, AlertTriangle, ArrowDownRight, ArrowUpRight, CheckCircle2, CircleDollarSign, Clock3, Loader2, Plus, RefreshCw, ShieldAlert, TrendingDown, TrendingUp } from "lucide-react";
+import { Activity, AlertTriangle, ArrowDownRight, CheckCircle2, CircleDollarSign, Clock3, Loader2, Plus, RefreshCw, ShieldAlert, TrendingDown, TrendingUp } from "lucide-react";
 import { useAuth } from "../contexts/AuthContext";
 import { listBusinesses, type Business } from "../api/businesses";
 import { getBusinessHealth, saveBusinessHealth, type BusinessHealthDiagnosis, type BusinessHealthInput, type BusinessHealthSnapshot } from "../api/businessHealth";
@@ -13,9 +13,14 @@ const initialForm = (): BusinessHealthInput => ({
   operatingExpenses: 0, cashBalance: 0, marketingSpend: 0,
   newCustomers: 0, activeCustomers: 0, lostCustomers: 0, notes: "",
 });
-const money = (value: number | null | undefined, currency: string) => value == null
-  ? "Not enough data"
-  : new Intl.NumberFormat(undefined, { style: "currency", currency, maximumFractionDigits: 0 }).format(value);
+const money = (value: number | null | undefined, currency: string) => {
+  if (value == null) return "Not enough data";
+  try {
+    return new Intl.NumberFormat(undefined, { style: "currency", currency, maximumFractionDigits: 0 }).format(value);
+  } catch {
+    return currency + " " + new Intl.NumberFormat(undefined, { maximumFractionDigits: 0 }).format(value);
+  }
+};
 const monthLabel = (value: string) => new Date(`${value}T00:00:00`).toLocaleDateString(undefined, { month: "long", year: "numeric" });
 
 function MetricCard({ label, value, detail, icon: Icon, tone = "neutral" }: {
@@ -118,7 +123,6 @@ export default function BusinessHealth() {
   const metrics = diagnosis?.metrics;
   const currency = form.currency || metrics?.currency || "NGN";
   const status = statusCopy(diagnosis?.status ?? "insufficient_data");
-  const latest = snapshots[0];
 
   return <div className="mx-auto w-full max-w-6xl space-y-6 pb-12">
     <header className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
