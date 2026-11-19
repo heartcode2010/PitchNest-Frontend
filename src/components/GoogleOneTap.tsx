@@ -22,7 +22,7 @@ const SKIPPED_PATHS = new Set([
 ]);
 
 function skipped(pathname: string): boolean {
-  // Shared pitch reports are read by investors, not people joining PitchNest.
+  // Shared pitch reports are read by investors, not people joining VentureRoom.
   return SKIPPED_PATHS.has(pathname) || pathname.startsWith("/share/");
 }
 
