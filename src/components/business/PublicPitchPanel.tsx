@@ -180,7 +180,7 @@ export function PublicPitchPanel({
               </div>
             ) : state.hidden ? (
               <p className="font-semibold text-rose-600 dark:text-rose-400">
-                Your pitch was hidden by PitchNest moderation after a report. You can revise it and publish again.
+                Your pitch was hidden by VentureRoom moderation after a report. You can revise it and publish again.
               </p>
             ) : (
               <span className="inline-flex items-center gap-1.5 font-semibold text-slate-500 dark:text-zinc-400">
