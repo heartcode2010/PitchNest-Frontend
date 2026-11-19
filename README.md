@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="logo.svg" alt="PitchNest Logo" width="100" />
+  <img src="logo.svg" alt="VentureRoom Logo" width="100" />
 </p>
 
-<h1 align="center">PitchNest Frontend</h1>
+<h1 align="center">VentureRoom Frontend</h1>
 
 <p align="center">
-  <strong>The Official Web SPA for PitchNest — Real-Time Voice Pitch Simulation for Startup Founders</strong>
+  <strong>The Official Web SPA for VentureRoom — Real-Time Voice Pitch Simulation for Startup Founders</strong>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@
 
 ## 🚀 Overview
 
-**PitchNest Frontend** is the browser application powering the PitchNest platform. It gives founders an interactive, high-stakes venture boardroom experience directly on the web:
+**VentureRoom Frontend** is the browser application powering the VentureRoom platform. It gives founders an interactive, high-stakes venture boardroom experience directly on the web:
 * Streams founder microphone audio over secure WebSockets directly into the Azure AI speech pipeline.
 * Renders real-time AI panel personas (Marcus, Sarah, Chen, Riley) with synchronized audio playback and visual feedback.
 * Handles slide-by-slide PDF pitch deck presentation and dynamic slide sync.
@@ -44,7 +44,7 @@
 ## 🛠️ Project Structure
 
 ```text
-PitchNest-Frontend/
+VentureRoom-Frontend/
 ├── public/                # Static assets, favicon, logo
 ├── src/
 │   ├── components/        # Reusable UI components (Modals, Logo, DeckViewer, etc.)
@@ -75,7 +75,7 @@ PitchNest-Frontend/
 
 ```bash
 # Clone the repository
-git clone https://github.com/PitchNest-Lab/PitchNest-Frontend.git
+git clone https://github.com/heartcode2010/PitchNest-Frontend.git
 cd PitchNest-Frontend
 
 # Install dependencies
@@ -115,10 +115,14 @@ This repository includes a turnkey [vercel.json](vercel.json) that automatically
 
 | Repository | Description |
 | :--- | :--- |
-| **[PitchNest-Backend](https://github.com/PitchNest-Lab/PitchNest-Backend)** | Express & WebSocket API server, Azure AI/Speech engine, Supabase integration |
-| **[PitchNest-Mobile](https://github.com/PitchNest-Lab/PitchNest-Mobile)** | Native iOS & Android companion mobile app (React Native / Expo) |
+| **[VentureRoom-Backend](https://github.com/heartcode2010/PitchNest-Backend)** | Express & WebSocket API server, Azure AI/Speech engine, Supabase integration |
+| **[VentureRoom-Mobile](https://github.com/PitchNest-Lab/PitchNest-Mobile)** | Native iOS & Android companion mobile app (React Native / Expo) |
 
 ---
+
+## 🏢 Product & stewardship
+
+VentureRoom is built by **Heartcode Technologies**. The web application and API are maintained as coordinated parts of one founder-readiness product.
 
 ## 📄 License
 

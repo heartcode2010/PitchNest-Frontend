@@ -97,11 +97,11 @@ const PAGE_INFO: Array<{ test: (pathname: string) => boolean; title: string; are
   { test: (p) => p.startsWith('/replay'), title: 'Pitch Replay', area: 'Private AI practice' },
   { test: (p) => p.startsWith('/report'), title: 'Pitch report', area: 'Private AI practice' },
   { test: (p) => p.startsWith('/settings'), title: 'Settings', area: 'Your account' },
-  { test: (p) => p.startsWith('/staff'), title: 'Staff tools', area: 'PitchNest team' },
+  { test: (p) => p.startsWith('/staff'), title: 'Staff tools', area: 'VentureRoom team' },
 ];
 
 function pageInfo(pathname: string) {
-  return PAGE_INFO.find((entry) => entry.test(pathname)) ?? { title: 'PitchNest', area: 'Founder ecosystem' };
+  return PAGE_INFO.find((entry) => entry.test(pathname)) ?? { title: 'VentureRoom', area: 'Founder ecosystem' };
 }
 
 const SidebarItem = ({ item, active, onClick }: { item: NavItem; active: boolean; onClick?: () => void }) => {
@@ -551,7 +551,8 @@ export default function AppLayout() {
 
         <footer className="border-t border-slate-200/70 px-4 pb-24 pt-5 text-[11px] text-slate-400 dark:border-zinc-800/70 dark:text-zinc-600 md:px-8 lg:pb-6">
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <span>© {new Date().getFullYear()} PitchNest · Practise privately, share intentionally.</span>
+            <span>© {new Date().getFullYear()} VentureRoom · Practise privately, share intentionally.</span>
+            <span className="ml-auto">Built by <strong className="font-semibold text-slate-600 dark:text-zinc-300">Heartcode Technologies</strong>.</span>
             <nav className="flex flex-wrap gap-4" aria-label="Footer">
               <Link to="/pricing" className="hover:text-slate-600 dark:hover:text-zinc-300">Pricing</Link>
               <Link to="/privacy" className="hover:text-slate-600 dark:hover:text-zinc-300">Privacy</Link>

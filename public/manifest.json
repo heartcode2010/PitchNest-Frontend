@@ -1,32 +1,20 @@
 {
   "id": "/",
-  "name": "PitchNest Live",
-  "short_name": "PitchNest",
-  "description": "Pitch room sandbox with live AI investors and coaching.",
+  "name": "VentureRoom",
+  "short_name": "VentureRoom",
+  "description": "Founder pitch preparation with realistic AI investor practice and actionable feedback.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#0ea5e9",
+  "background_color": "#10251F",
+  "theme_color": "#10251F",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/logo.png",
-      "sizes": "512x512",
-      "type": "image/png",
+      "src": "/ventureroom-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
       "purpose": "any"
-    },
-    {
-      "src": "/logo-maskable-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/logo-maskable-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
     }
   ]
 }
