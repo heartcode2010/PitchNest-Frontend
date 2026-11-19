@@ -16,8 +16,8 @@ function deadlineLabel(item: HostedOpportunity): string {
 }
 
 /**
- * A challenge PitchNest runs itself. Unlike an external listing it opens a
- * page on PitchNest, where founders join, enter and follow their status.
+ * A challenge VentureRoom runs itself. Unlike an external listing it opens a
+ * page on VentureRoom, where founders join, enter and follow their status.
  * "featured" leads the Opportunities hub; "compact" fits a list or Home.
  */
 export function HostedChallengeCard({ item, variant = "compact" }: { item: HostedOpportunity; variant?: "featured" | "compact" }) {
@@ -62,7 +62,7 @@ export function HostedChallengeCard({ item, variant = "compact" }: { item: Hoste
       <div className="flex min-w-0 flex-1 flex-col p-5">
         <div className="flex flex-wrap items-center gap-2">
           <span className="inline-flex items-center gap-1 rounded-full bg-accent-soft px-2.5 py-0.5 text-[11px] font-bold text-accent-text dark:bg-accent/15 dark:text-accent">
-            <ShieldCheck size={12} /> Hosted by PitchNest
+            <ShieldCheck size={12} /> Hosted by VentureRoom
           </span>
           <span className="rounded-full bg-indigo-50 px-2.5 py-0.5 text-[11px] font-bold text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300">
             Pitch competition
