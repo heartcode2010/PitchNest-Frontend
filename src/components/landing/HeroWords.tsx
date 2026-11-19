@@ -38,10 +38,10 @@ export function HeroWords() {
           variants={{ hidden: {}, show: { transition: { staggerChildren: 0.06, delayChildren: 0.02 } } }}
           className="font-display text-[2.2rem] sm:text-5xl lg:text-[clamp(2.8rem,4.6vw,3.6rem)] font-semibold leading-[1.06] tracking-tight"
         >
-          <FadeWords text="Get grilled by AI" />
+          <FadeWords text="Make your next big room" />
           <br />
           <span className="gradient-text">
-            <FadeWords text="before investors do." />
+            <FadeWords text="feel familiar." />
           </span>
         </motion.h1>
       </motion.div>
