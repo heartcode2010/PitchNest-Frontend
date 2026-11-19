@@ -71,7 +71,7 @@ export default function DeleteAccount() {
   return (
     <LegalLayout title="Delete Account" lastUpdated={LEGAL_LAST_UPDATED}>
       <p>
-        You can permanently delete your PitchNest account and associated personal data from a web browser without
+        You can permanently delete your VentureRoom account and associated personal data from a web browser without
         reinstalling the app.
       </p>
 
