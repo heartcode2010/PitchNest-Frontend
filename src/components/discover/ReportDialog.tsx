@@ -74,7 +74,7 @@ export function ReportDialog({ target, onClose }: ReportDialogProps) {
       setMessage(
         result.alreadyReported
           ? "You already reported this. Our moderators have it in their queue."
-          : "Thanks. A PitchNest moderator will review it.",
+          : "Thanks. A VentureRoom moderator will review it.",
       );
     } catch (error) {
       setState("idle");
