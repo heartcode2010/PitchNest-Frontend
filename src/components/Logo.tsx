@@ -21,7 +21,7 @@ export function LogoMark({ size = 'md', className }: LogoMarkProps) {
     <img
       src="/ventureroom-mark.svg"
       alt="VentureRoom"
-      className={cn(SIZES[size], 'shrink-0 rounded-full object-cover', className)}
+      className={cn(SIZES[size], 'shrink-0 rounded-xl object-cover', className)}
     />
   );
 }
